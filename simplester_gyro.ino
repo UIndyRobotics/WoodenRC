@@ -2,7 +2,9 @@
 #include <FaBo9Axis_MPU9250.h>
 
 FaBo9Axis fabo_9axis;
-
+// Do some testing on if we can use
+// doubles instead of float,
+// also at what rate can we collect data
 void setup() {
   Serial.begin(9600);
   Serial.println("RESET");
