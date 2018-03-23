@@ -13,7 +13,7 @@
 
 // Send UDP packets to this IP & Port
 //IPAddress remoteIP(192, 168, 1, 166);
-IPAddress remoteIP(10,34,98,190);
+IPAddress remoteIP(10,18,100,23);
 int port = 8888;
 
 // Pin assignments
