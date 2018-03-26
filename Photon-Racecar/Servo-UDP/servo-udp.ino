@@ -97,7 +97,7 @@ void loop(){
     myservos[1].write(network.throttle_out);
 
     // TODO Verify car is still drivable when Wifi is lost
-    if( Wifi.ready()){
+    if(WiFi.ready()){
       Udp.sendPacket((byte*)&network, sizeof(network), remoteIP, port);
     }
 
