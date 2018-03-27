@@ -38,7 +38,8 @@ int throttle_min = 70;
 
 // What we'll send over udp
 struct network_info_t{
-  int counter; // increasing value to verify new packets
+  unsigned short struct_ver;
+  unsigned int counter; // increasing value to verify new packets
   
   float battery_voltage_in;
   float battery_current_in;
@@ -62,8 +63,9 @@ struct network_info_t{
 
 Servo myservos[2] = {};
 UDP Udp;
-int counter;
+unsigned int counter;
 network_info_t network;
+network.struct_ver = 1; // Increase this whenever the structure changes.
 
 void setup() {
     WiFi.on();
