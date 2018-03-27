@@ -1,4 +1,4 @@
-#include <SparkFun_MPU-9250.h>
+#include <MPU9250.h>
 
 
 /*
@@ -18,7 +18,7 @@
 //IPAddress remoteIP(192, 168, 1, 166);
 IPAddress remoteIP(10,18,100,23);
 int port = 8888;
-
+MPU9250 myIMU;
 // Pin assignments
 int steer_in = D2;
 int throttle_in = D3;
@@ -43,6 +43,7 @@ struct network_info_t{
 
   // Wifi parameters
   int sig_strength;
+  float ax;
   byte device_mac[6];
   char local_ip[16];
   char gateway_ip[16];
@@ -77,7 +78,10 @@ void setup() {
 void loop(){
 
     counter++;
-
+    myIMU.ax = (float)myIMU.accelCount[0] * myIMU.aRes; // - myIMU.accelBias[0];
+    myIMU.ay = (float)myIMU.accelCount[1] * myIMU.aRes; // - myIMU.accelBias[1];
+    myIMU.az = (float)myIMU.accelCount[2] * myIMU.aRes; // - myIMU.accelBias[2];
+    network.ax = myIMU.ax;
     // pull in all network info into struct
     WiFi.macAddress(network.device_mac);
     strcpy(network.local_ip, WiFi.localIP().toString() );
@@ -98,7 +102,8 @@ void loop(){
     // Apply a throttle linear shift around middle (90)
     network.throttle_out = map(network.throttle_pos, 0, 180, throttle_min, 180-throttle_min);
     myservos[1].write(network.throttle_out);
-
+    myIMU.updateTime();
+    MahonyQuaternionUpdate(myIMU.ax, myIMU.ay, myIMU.az, myIMU.deltat);
     // TODO Verify car is still drivable when Wifi is lost
     if(WiFi.ready()){
       Udp.sendPacket((byte*)&network, sizeof(network), remoteIP, port);
