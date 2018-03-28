@@ -16,7 +16,7 @@
 
 // Send UDP packets to this IP & Port
 //IPAddress remoteIP(192, 168, 1, 166);
-IPAddress remoteIP(10,18,100,23);
+IPAddress remoteIP(10,18,101,57);
 int port = 8888;
 MPU9250 myIMU;
 // Pin assignments
@@ -44,6 +44,8 @@ struct network_info_t{
   // Wifi parameters
   int sig_strength;
   float ax;
+  float ay;
+  float az;
   byte device_mac[6];
   char local_ip[16];
   char gateway_ip[16];
@@ -65,23 +67,26 @@ void setup() {
 
     pinMode(D7, OUTPUT); // To blink blue light during transmit
 
-    pinMode(steer_in, INPUT);
-    pinMode(throttle_in, INPUT);
+    //pinMode(steer_in, INPUT);
+    //pinMode(throttle_in, INPUT);
 
     counter = 0;
 
-    myservos[0].attach(steer_out);
-    myservos[1].attach(throttle_out);
+    //myservos[0].attach(steer_out);
+    //myservos[1].attach(throttle_out);
 
 }
 
 void loop(){
-
+    myIMU.readAccelData(myIMU.accelCount);
+    myIMU.getAres();
     counter++;
     myIMU.ax = (float)myIMU.accelCount[0] * myIMU.aRes; // - myIMU.accelBias[0];
     myIMU.ay = (float)myIMU.accelCount[1] * myIMU.aRes; // - myIMU.accelBias[1];
     myIMU.az = (float)myIMU.accelCount[2] * myIMU.aRes; // - myIMU.accelBias[2];
     network.ax = myIMU.ax;
+    network.ay = myIMU.ay;
+    network.az = myIMU.az;
     // pull in all network info into struct
     WiFi.macAddress(network.device_mac);
     strcpy(network.local_ip, WiFi.localIP().toString() );
