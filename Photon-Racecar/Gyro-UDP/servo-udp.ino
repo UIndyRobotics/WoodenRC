@@ -1,5 +1,5 @@
 #include <MPU9250.h>
-
+#include <quaternionFilters.h>
 
 /*
     servo-udp.ino
@@ -103,7 +103,9 @@ void loop(){
     network.throttle_out = map(network.throttle_pos, 0, 180, throttle_min, 180-throttle_min);
     myservos[1].write(network.throttle_out);
     myIMU.updateTime();
-    MahonyQuaternionUpdate(myIMU.ax, myIMU.ay, myIMU.az, myIMU.deltat);
+    MahonyQuaternionUpdate(myIMU.ax, myIMU.ay, myIMU.az, myIMU.gx * DEG_TO_RAD,
+                         myIMU.gy * DEG_TO_RAD, myIMU.gz * DEG_TO_RAD, myIMU.my,
+                         myIMU.mx, myIMU.mz, myIMU.deltat);
     // TODO Verify car is still drivable when Wifi is lost
     if(WiFi.ready()){
       Udp.sendPacket((byte*)&network, sizeof(network), remoteIP, port);

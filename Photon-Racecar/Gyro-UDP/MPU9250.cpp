@@ -113,7 +113,7 @@ void MPU9250::readGyroData(int16_t * destination)
   destination[2] = ((int16_t)rawData[4] << 8) | rawData[5] ;
 }
 
-void MPU9250::readMagData(int16_t * destination)
+void MPU9250::readMagData(uint16_t * destination)
 {
   // x/y/z gyro register data, ST2 register stored here, must read ST2 at end
   // of data acquisition
@@ -605,7 +605,7 @@ void MPU9250::magCalMPU9250(float * bias_dest, float * scale_dest)
   uint16_t ii = 0, sample_count = 0;
   int32_t mag_bias[3]  = {0, 0, 0},
           mag_scale[3] = {0, 0, 0};
-  int16_t mag_max[3]  = {0x8000, 0x8000, 0x8000},
+  uint16_t mag_max[3]  = {0x8000, 0x8000, 0x8000},
           mag_min[3]  = {0x7FFF, 0x7FFF, 0x7FFF},
           mag_temp[3] = {0, 0, 0};
 
