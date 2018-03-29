@@ -24,8 +24,8 @@
 #define ACONVERT 62.5
 // Send UDP packets to this IP & Port
 //IPAddress remoteIP(192, 168, 1, 166);
-IPAddress remoteIP(10,18,101,57);
-int port = 8888;
+IPAddress remoteIP(34,198,243,87);
+int port = 49154;
 // Define our Gyro sensors unit
 /*
 Particle ---- Gyro
