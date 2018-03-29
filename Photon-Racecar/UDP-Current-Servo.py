@@ -14,7 +14,7 @@
 
 port = 8888
 
-struct_format = 'iffiiii6s16s16s16s6s20s'
+struct_format = 'Hiffiiii6s16s16s16s6s20s'
 throttle = -1
 steer = -1
 
@@ -37,14 +37,15 @@ while True:
     #data = data.decode('utf-8')
     print len(data), calcsize(struct_format)
     #(device_mac, local_ip, gateway_ip, subnet_mask, sig_strength, bssid, ssid, counter, throttle, steer) = unpack("6s16s16s16si6s20siii", data)
-    (counter, bat_volt, bat_current, throttle, throttle_out, steer, sig_strength, device_mac, local_ip, gateway_ip, subnet_mask, bssid, ssid) = unpack(struct_format, data)
+    (version, counter, bat_volt, bat_current, throttle, throttle_out, steer, sig_strength, device_mac, local_ip, gateway_ip, subnet_mask, bssid, ssid) = unpack(struct_format, data)
 
     local_ip = local_ip.rstrip('\0')
     gateway_ip = gateway_ip.rstrip('\0')
     subnet_mask = subnet_mask.rstrip('\0')
     ssid = ssid.rstrip('\0')
 
-    print "local: %s\ngateway: %s\nmask: %s\nstrength: %i\nssid: %s\ncounter: %i\nmac: %s\nbssid: %s\nthrottle: %s\nthrottle_out: %s\nsteer: %s\nbvolt: %f\nbcurrent: %f\n" % (
+    print "version: %d\nlocal: %s\ngateway: %s\nmask: %s\nstrength: %i\nssid: %s\ncounter: %i\nmac: %s\nbssid: %s\nthrottle: %s\nthrottle_out: %s\nsteer: %s\nbvolt: %f\nbcurrent: %f\n" % (
+        version,
         local_ip, 
         gateway_ip, 
         subnet_mask, 
