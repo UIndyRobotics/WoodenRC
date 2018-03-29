@@ -1,7 +1,7 @@
 '''
   UDP-Network-Photon.py
   Clayton Winders
-  March 18, 2018
+  March 29, 2018
   Prints UDP packets send to this machine, port '8081'.  Unpackes a struct created on a
   Particle Photon with the following:
 
@@ -32,7 +32,7 @@
   See udp-wifi-streamer.ino for the Photon code.
 '''
 
-port = 8888
+port = 49154
 
 struct_format = 'iiiiifffff6s16s16s16s6s20s'
 throttle = -1
