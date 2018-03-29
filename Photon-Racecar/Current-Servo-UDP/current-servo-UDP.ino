@@ -5,7 +5,7 @@
 
     Passes servo signals through to racecar, and sends data over UDP to the
     specified address/port.
-    
+
     Includes battery voltage and current.
 
     See the first lines below for the destination IP and port to send the packet
@@ -40,7 +40,7 @@ int throttle_min = 70;
 struct network_info_t{
   unsigned short struct_ver;
   unsigned int counter; // increasing value to verify new packets
-  
+
   float battery_voltage_in;
   float battery_current_in;
 
@@ -65,12 +65,12 @@ Servo myservos[2] = {};
 UDP Udp;
 unsigned int counter;
 network_info_t network;
-network.struct_ver = 1; // Increase this whenever the structure changes.
+
 
 void setup() {
     WiFi.on();
     Udp.begin(port);
-    
+
 
     pinMode(D7, OUTPUT); // To blink blue light during transmit
 
@@ -81,9 +81,8 @@ void setup() {
 
     myservos[0].attach(steer_out);
     myservos[1].attach(throttle_out);
-    
-    //pinMode(battery_voltage_in,INPUT);
-    //pinMode(battery_current_in,INPUT);
+
+    network.struct_ver = 1; // Increase this whenever the structure changes.
 }
 
 void loop(){
@@ -99,7 +98,7 @@ void loop(){
     WiFi.BSSID(network.access_point_BSSID);
     strcpy(network.ssid, WiFi.SSID());
     network.counter = counter;
-    
+
     // Battery info
     network.battery_voltage_in = analogRead(battery_voltage_in) * (float)3.3 * VCONVERT / 4095;
     network.battery_current_in = analogRead(battery_current_in) / (float)ACONVERT;
