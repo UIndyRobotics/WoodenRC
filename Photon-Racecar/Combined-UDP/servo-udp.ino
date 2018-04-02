@@ -24,7 +24,8 @@
 #define ACONVERT 62.5
 // Send UDP packets to this IP & Port
 //IPAddress remoteIP(192, 168, 1, 166);
-IPAddress remoteIP(34,198,243,87);
+//IPAddress remoteIP(34,198,243,87);
+IPAddress remoteIP(18,217,55,123); // Talaga EC2
 int port = 49154;
 // Define our Gyro sensors unit
 /*
@@ -82,6 +83,9 @@ UDP Udp;
 int counter;
 network_info_t network;
 
+
+int ch_throttle(String val);
+
 void setup() {
     WiFi.on();
     Udp.begin(port);
@@ -96,6 +100,9 @@ void setup() {
 
     myservos[0].attach(steer_out);
     myservos[1].attach(throttle_out);
+    
+    Particle.variable("throttle_min", throttle_min);
+    Particle.function("ch_throttle", ch_throttle);
 
 }
 
@@ -126,8 +133,9 @@ void loop(){
     // Read and write servos
     // TODO Investigate if pulseIn is the best here
     // Maps pwm pulse width to degrees, which the Servo library likes.
-    network.throttle_pos = map(pulseIn(throttle_in, HIGH), 1105, 1897, 0, 180);
-    network.steer_pos = map(pulseIn(steer_in, HIGH), 1105, 1897, 0, 180);
+    // TODO: figure out how not to block when it isn't getting a PWM signal
+//network.throttle_pos = map(pulseIn(throttle_in, HIGH), 1105, 1897, 0, 180);
+//network.steer_pos = map(pulseIn(steer_in, HIGH), 1105, 1897, 0, 180);
 
     myservos[0].write(network.steer_pos);
     // Apply a throttle linear shift around middle (90)
@@ -150,5 +158,18 @@ void loop(){
     }
 
     // TODO: remove this delay and put into a much larger loop with timings
-    delay(100);
+    delay(10);
+}
+
+int ch_throttle(String val){
+    int value = val.toInt();
+    if(value <= 90 && value >= 0){
+        throttle_min = value;
+        // Particle.publish(const char *eventName, const char *data);
+        // Particle.publish(String eventName, String data);
+        Particle.publish("Throttle min changed: ", val);
+        return 1;
+    } else {
+        return -1;
+    }
 }
