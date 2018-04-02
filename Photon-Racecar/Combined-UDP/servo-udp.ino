@@ -165,11 +165,14 @@ int ch_throttle(String val){
     int value = val.toInt();
     if(value <= 90 && value >= 0){
         throttle_min = value;
+        // Format example
         // Particle.publish(const char *eventName, const char *data);
         // Particle.publish(String eventName, String data);
         Particle.publish("Throttle min changed: ", val);
+        // Let it know that we were successful
         return 1;
     } else {
+        // Let the console know it was unsuccessful
         return -1;
     }
 }
