@@ -52,11 +52,12 @@ String mode = "u";
 // Hardware SPI is a little faster, but must be wired to specific pins
 // (Core/Photon/P1/Electron = pin A5 for data, A3 for clock)
 //Adafruit_DotStar strip = Adafruit_DotStar(NUMPIXELS);
-
+int ch_mode(String val);
 void setup() {
   strip.begin(); // Initialize pins for output
   strip.show();  // Turn all LEDs off ASAP
   Particle.variable("mode", mode);
+  Particle.function("ch_mode", ch_mode);
 }
 
 // Runs 10 LEDs at a time along strip, cycling through red, green and blue.
@@ -79,5 +80,32 @@ void loop() {
       }
       if(++tail >= NUMPIXELS) tail = 0; // Increment, reset tail index
   }
+  if(mode == "s"){
+      for(int i = 0; i <= NUMPIXELS; i++){
+          strip.setPixelColor(i, 255, 0, 0);
+      }
+      strip.show();
+      delay(1000);
+      for(int i = 0; i <= NUMPIXELS; i++){
+          strip.setPixelColor(i, 255, 0, 255);
+      }
+      strip.show();
+      delay(1000);
+      for(int i = 0; i <= NUMPIXELS; i++){
+          strip.setPixelColor(i, 0, 0, 255);
+      }
+      strip.show();
+      mode = "u";
+  }
+  if(mode == "r"){
+      for(int i = 0; i <= NUMPIXELS; i++){
+          strip.setPixelColor(i, 0, 0, 0);
+      }
+  }
   
+}
+
+int ch_mode(String val){
+    mode = val;
+    return 1;
 }
