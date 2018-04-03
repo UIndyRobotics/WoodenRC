@@ -53,6 +53,7 @@ String mode = "u";
 // (Core/Photon/P1/Electron = pin A5 for data, A3 for clock)
 //Adafruit_DotStar strip = Adafruit_DotStar(NUMPIXELS);
 int ch_mode(String val);
+int random(int maxRand);
 void setup() {
   strip.begin(); // Initialize pins for output
   strip.show();  // Turn all LEDs off ASAP
@@ -98,14 +99,21 @@ void loop() {
       mode = "u";
   }
   if(mode == "r"){
-      for(int i = 0; i <= NUMPIXELS; i++){
-          strip.setPixelColor(i, 0, 0, 0);
+      for(int i = 0; i <= 50; i++){
+          int j = random(NUMPIXELS);
+          strip.setPixelColor(j, 255, 255, 255);
       }
+      strip.show();
+      delay(100);
   }
-  
 }
 
 int ch_mode(String val){
     mode = val;
     return 1;
+}
+
+int random(int maxRand)
+{
+    return rand() % maxRand + 1;
 }
