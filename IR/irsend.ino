@@ -45,29 +45,11 @@ void setup() {
 }
 
 void loop() {
-
-  //First send the NEC RAW signal above
-  digitalWrite(LED,HIGH);
-  sigTime = micros(); //keeps rolling track of signal time to avoid impact of loop & code execution delays
-  for (int i = 0; i < sizeof(NEC_RAW) / sizeof(NEC_RAW[0]); i++) {
-    mark(NEC_RAW[i++]); //also move pointer to next position
-    if (i < sizeof(NEC_RAW) / sizeof(NEC_RAW[0])) space(NEC_RAW[i]); //pointer will be moved by for loop
+  for (int i=0;i<10;i++){
+    mark(500);
+    space(1000);
   }
-  digitalWrite(LED,LOW);
-  delay(5000); //wait 5 seconds between each signal (change to suit)
-
-
-  //Next send the Mitsubishi AC RAW signal above
-  digitalWrite(LED,HIGH);
-  sigTime = micros(); //keeps rolling track of signal time to avoid impact of loop & code execution delays
-  for (int i = 0; i < sizeof(Mitsubishi_RAW) / sizeof(Mitsubishi_RAW[0]); i++) {
-    mark(Mitsubishi_RAW[i++]);  //also move pointer to next position
-    if (i < sizeof(Mitsubishi_RAW) / sizeof(Mitsubishi_RAW[0])) space(Mitsubishi_RAW[i]); //pointer will be moved by for loop
-  }
-  digitalWrite(LED,LOW);
-  delay(5000); //wait 5 seconds between each signal (change to suit)
-  //Serial.println("******");
-
+  delay(5000);
 }
 
 void mark(unsigned int mLen) { //uses sigTime as end parameter
