@@ -1,8 +1,11 @@
 '''
-  UDP-Network-Photon.py
-  Clayton Winders
-  March 29, 2018
-  Prints UDP packets send to this machine, port '8081'.  Unpackes a struct created on a
+  TCP-Network-Photon.py
+  Paul Talaga
+  April 6, 2018
+  Connects via TCP to a a UDP repeater (UDP-Repeater) running in the cloud, which
+  streams information sent to it via UDP.
+
+  Unpackes a struct created on a
   Particle Photon with the following:
 
   struct network_info_t{
@@ -34,6 +37,7 @@
   See udp-wifi-streamer.ino for the Photon code.
 '''
 
+host = "18.217.55.123"  # IP address of Talaga's EC2 repeater
 port = 49154
 
 struct_format = 'IiiiIifffff6s16s16s16s6s20s'
@@ -47,25 +51,33 @@ from struct import *
 def getMAS(mac):
   return "%x:%x:%x:%x:%x:%x" % unpack("BBBBBB",mac)
 
-host = ""
 
 buf = 1024
 addr = (host, port)
-UDPSock = socket(AF_INET, SOCK_DGRAM)
-UDPSock.bind(addr)
+TCPSock = socket(AF_INET, SOCK_STREAM)
+TCPSock.connect(addr)
 print("Waiting to receive message...")
+data = ""
+start_counter = -1
+packets_so_far = 0
+
 while True:
-    (data, addr) = UDPSock.recvfrom(buf)
-    #data = data.decode('utf-8')
-    print(len(data), calcsize(struct_format))
+    data = data + TCPSock.recv(buf)
+    if len(data) < calcsize(struct_format):
+      continue
+    if len(data) > calcsize(struct_format):
+      data = data[-calcsize(struct_format):]
+    #print(len(data), calcsize(struct_format))
     #(device_mac, local_ip, gateway_ip, subnet_mask, sig_strength, bssid, ssid, counter, throttle, steer) = unpack("6s16s16s16si6s20siii", data)
     (counter, throttle, throttle_out, steer, ir_changes, sig_strength, ax, ay, az, battery_voltage_in, battery_current_in,device_mac, local_ip, gateway_ip, subnet_mask, bssid, ssid) = unpack(struct_format, data)
 
-#     local_ip = local_ip.rstrip('\0')
-#     gateway_ip = gateway_ip.rstrip('\0')
-#     subnet_mask = subnet_mask.rstrip('\0')
-#     ssid = ssid.rstrip('\0')
+    # Attemp to print how many lost packets we've seen
+    if start_counter == -1:
+      start_counter = counter
+    packets_so_far += 1
+    
 
+    print("\n   Missed Packets: %d" % (packets_so_far - (counter - start_counter)))
     print("local: %s\ngateway: %s\nmask: %s\nstrength: %i\nssid: %s\ncounter: %i\nmac: %s\nbssid: %s\nthrottle: %s\nthrottle_out: %s\nsteer: %s" % (local_ip, gateway_ip, subnet_mask, sig_strength, ssid, counter, getMAS(device_mac), getMAS(bssid), throttle, throttle_out, steer))
     print("ax: ", ax)
     print("ay: ", ay)
