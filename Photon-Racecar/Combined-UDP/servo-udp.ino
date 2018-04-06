@@ -35,31 +35,36 @@ Particle ---- Gyro
  3.3v/VIN      VCC
  GND           GND
 */
-MPU9250 myIMU;
+
 // Pin assignments
 int steer_in = D5;
 int throttle_in = D6;
-int steer_out = D3;
-int throttle_out = D4;
+int steer_out = A5;
+int throttle_out = A4;
 
 int battery_voltage_in = A0;
 int battery_current_in = A1;
+
+int IR_detect_in = A2;
 
 // Performs a linear shift of throttle response.  90 is middle (no power),
 // so setting this to 80 means it will range from 80 to 100 for the full
 // controller movement.
 // TODO Research motor controller modes and apply expo
-int throttle_min = 80;
+int throttle_min = 70;
 
 /************************************************/
+MPU9250 myIMU;
 
 // What we'll send over udp
 struct network_info_t{
-  int counter; // increasing value to verify new packets
+  unsigned counter; // increasing value to verify new packets
 
   int throttle_pos; // signal from controller
   int throttle_out; // modified signal to car
   int steer_pos;  // signal from controller and to car
+  
+  unsigned ir_changes;
 
   int sig_strength;
   // Data from sensors
@@ -83,6 +88,13 @@ UDP Udp;
 int counter;
 network_info_t network;
 
+// IR trigger
+volatile unsigned ir_changes;
+
+void ir_trigger(){
+    ir_changes++;
+}
+
 
 int ch_throttle(String val);
 
@@ -103,7 +115,11 @@ void setup() {
     
     Particle.variable("throttle_min", throttle_min);
     Particle.function("ch_throttle", ch_throttle);
-
+    
+    // IR pit and ISR setup
+    ir_changes = 0;
+    pinMode(IR_detect_in, INPUT_PULLUP);
+    attachInterrupt(IR_detect_in, ir_trigger, FALLING);
 }
 
 void loop(){
@@ -134,8 +150,8 @@ void loop(){
     // TODO Investigate if pulseIn is the best here
     // Maps pwm pulse width to degrees, which the Servo library likes.
     // TODO: figure out how not to block when it isn't getting a PWM signal
-//network.throttle_pos = map(pulseIn(throttle_in, HIGH), 1105, 1897, 0, 180);
-//network.steer_pos = map(pulseIn(steer_in, HIGH), 1105, 1897, 0, 180);
+   network.throttle_pos = map(pulseIn(throttle_in, HIGH), 1105, 1897, 0, 180);
+   network.steer_pos = map(pulseIn(steer_in, HIGH), 1105, 1897, 0, 180);
 
     myservos[0].write(network.steer_pos);
     // Apply a throttle linear shift around middle (90)
@@ -145,6 +161,10 @@ void loop(){
     MahonyQuaternionUpdate(myIMU.ax, myIMU.ay, myIMU.az, myIMU.gx * DEG_TO_RAD,
                          myIMU.gy * DEG_TO_RAD, myIMU.gz * DEG_TO_RAD, myIMU.my,
                          myIMU.mx, myIMU.mz, myIMU.deltat);
+                         
+                         
+    network.ir_changes = ir_changes;
+    
     // TODO Verify car is still drivable when Wifi is lost
     if(WiFi.ready()){
       Udp.sendPacket((byte*)&network, sizeof(network), remoteIP, port);
@@ -158,7 +178,7 @@ void loop(){
     }
 
     // TODO: remove this delay and put into a much larger loop with timings
-    delay(10);
+    delay(20);
 }
 
 int ch_throttle(String val){
