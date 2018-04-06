@@ -14,6 +14,7 @@ TCP_port = 49154
 import os
 from socket import *
 from struct import *
+import select
 from threading import Thread
 
 class TCPThread(Thread):
@@ -26,6 +27,10 @@ class TCPThread(Thread):
     tcpServer = socket(AF_INET, SOCK_STREAM)
     tcpServer.setsockopt(SOL_SOCKET, SO_REUSEADDR, 1)
     tcpServer.bind( ('0.0.0.0', TCP_port) )
+#    tcpServer.setsockopt(SOL_SOCKET, SO_KEEPALIVE, 1)
+#    tcpServer.setsockopt(SOL_TCP, TCP_KEEPIDLE, 1)
+#    tcpServer.setsockopt(SOL_TCP, TCP_KEEPINTVL, 1)
+#    tcpServer.setsockopt(SOL_TCP, TCP_KEEPCNT, 1)
     while True:
       tcpServer.listen(4)
       (con, (ip, port)) = tcpServer.accept()
@@ -51,14 +56,15 @@ while True:
     (data, addr) = UDPSock.recvfrom(buf)
     (counter) = unpack('i', data[0:4]) # pull the first integer off
 #    print("Got UDP len: %d id: %d listeners: %d" % ( len(data), counter[0], len(con_list)))
-    #print "%d" % (counter[0])
+    #print "%d %d" % (counter[0], len(con_list))
     # Loop through all the connections and send to each client
     # TODO: This may cause a slowdown, investigate, and possibly multithread.
     for c in con_list:
-      # If connection is invalid, (they disconnected, remove from the list)
-      try:
+      (r,w,e) = select.select((c,), (), (), 0)
+      # select r returns an empty list if the socket is ready to send.
+      if len(r) == 0:
         c.send(data)
-      except socket.error as e:
+      else:
         print "Removing TCP client"
         con_list.remove(c)
         
