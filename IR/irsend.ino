@@ -24,6 +24,7 @@ unsigned int Mitsubishi_RAW[] = {3172, 1586, 394, 394, 394, 1182, 394, 394, 394,
 
 
 void setup() {
+   WiFi.on();
   //  Serial.begin(57600);
   pinMode(txPinIR, OUTPUT);
   pinMode(LED, OUTPUT);
@@ -49,7 +50,7 @@ void loop() {
     mark(500);
     space(1000);
   }
-  delay(5000);
+  delay(1000);
 }
 
 void mark(unsigned int mLen) { //uses sigTime as end parameter
