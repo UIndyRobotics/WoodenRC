@@ -1,0 +1,304 @@
+Exception:
+EADDRINUSE : Address already in use - bind(2) for "0.0.0.0" port 8888
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:192:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:88:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:88:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+
+Caller Backtrace:
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/top_level.rb:430:in `block (2 levels) in create_log_file'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/top_level.rb:427:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/top_level.rb:427:in `block in create_log_file'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/top_level.rb:716:in `set_working_dir'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/top_level.rb:400:in `create_log_file'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/top_level.rb:457:in `write_exception_file'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:217:in `handle_connection_failed'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:75:in `rescue in block in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:68:in `block in start'
+
+Ruby Version: ruby 2.4.2 (2017-09-14 patchlevel 198) [x86_64-darwin16]
+Rubygems Version: 2.6.13
+Cosmos Version: 4.1.1
+Cosmos::PATH: /Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1
+Cosmos::USERPATH: /Users/talagap/Dropbox/UIndy/Robots/WoodenRC/Cosmos
+
+Environment:
+RUBYOPT: -rbundler/setup
+RUBYLIB: /Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/bundler-1.16.1/lib:/usr/local/Cellar/rbenv/1.1.1/rbenv.d/exec/gem-rehash
+GEM_PATH: /Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0:/Users/talagap/.gem/ruby/2.4.0
+GEMRC: 
+RI_DEVKIT: 
+GEM_HOME: /Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0
+PATH: /Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/../bin:/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/bin:/Users/talagap/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Library/TeX/texbin:/Applications/Wireshark.app/Contents/MacOS:/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/../bin:/Users/talagap/.rbenv/versions/2.4.2/bin:/usr/local/Cellar/rbenv/1.1.1/libexec:/Users/talagap/.nexustools
+
+Ruby Path:
+  /Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/uuidtools-2.1.5/lib
+  /Users/talagap/Dropbox/UIndy/Robots/WoodenRC/Cosmos/lib
+  /Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/bundler-1.16.1/lib
+  /usr/local/Cellar/rbenv/1.1.1/rbenv.d/exec/gem-rehash
+  /Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/ruby-termios-0.9.6/lib
+  /Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/ruby-termios-0.9.6/.
+  /Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/extensions/x86_64-darwin-16/2.4.0/ruby-termios-0.9.6
+  /Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib
+  /Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/extensions/x86_64-darwin-16/2.4.0/cosmos-4.1.1
+  /Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/uuidtools-2.1.5/lib
+  /Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/snmp-1.2.0/lib
+  /Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/rubyzip-1.2.1/lib
+  /Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/rdoc-4.3.0/lib
+  /Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/rack-2.0.4/lib
+  /Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/qtbindings-4.8.6.4/lib
+  /Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/extensions/x86_64-darwin-16/2.4.0/qtbindings-4.8.6.4
+  /Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/puma-3.10.0/lib
+  /Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/extensions/x86_64-darwin-16/2.4.0/puma-3.10.0
+  /Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/pry-doc-0.6.0/lib
+  /Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/yard-0.9.12/lib
+  /Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/pry-0.10.4/lib
+  /Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/slop-3.6.0/lib
+  /Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/method_source-0.8.2/lib
+  /Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/opengl-0.10.0/lib
+  /Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/extensions/x86_64-darwin-16/2.4.0/opengl-0.10.0
+  /Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/nokogiri-1.8.2/lib
+  /Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/extensions/x86_64-darwin-16/2.4.0/nokogiri-1.8.2
+  /Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/mini_portile2-2.3.0/lib
+  /Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/json-1.8.6/lib
+  /Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/extensions/x86_64-darwin-16/2.4.0/json-1.8.6
+  /Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/httpclient-2.8.3/lib
+  /Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/coderay-1.1.2/lib
+  /Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/rake-12.3.1/lib
+  /Users/talagap/.rbenv/versions/2.4.2/lib/ruby/site_ruby/2.4.0
+  /Users/talagap/.rbenv/versions/2.4.2/lib/ruby/site_ruby/2.4.0/x86_64-darwin16
+  /Users/talagap/.rbenv/versions/2.4.2/lib/ruby/site_ruby
+  /Users/talagap/.rbenv/versions/2.4.2/lib/ruby/vendor_ruby/2.4.0
+  /Users/talagap/.rbenv/versions/2.4.2/lib/ruby/vendor_ruby/2.4.0/x86_64-darwin16
+  /Users/talagap/.rbenv/versions/2.4.2/lib/ruby/vendor_ruby
+  /Users/talagap/.rbenv/versions/2.4.2/lib/ruby/2.4.0
+  /Users/talagap/.rbenv/versions/2.4.2/lib/ruby/2.4.0/x86_64-darwin16
+  /Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/qtbindings-4.8.6.4/lib/../lib/2.4
+  /Users/talagap/Dropbox/UIndy/Robots/WoodenRC/Cosmos/config/targets/INST/lib
+  /Users/talagap/Dropbox/UIndy/Robots/WoodenRC/Cosmos/config/targets/INST/procedures
+  /Users/talagap/Dropbox/UIndy/Robots/WoodenRC/Cosmos/config/targets/EXAMPLE/lib
+  /Users/talagap/Dropbox/UIndy/Robots/WoodenRC/Cosmos/config/targets/TEMPLATED/lib
+  /Users/talagap/Dropbox/UIndy/Robots/WoodenRC/Cosmos/config/targets/SYSTEM/lib
+
+Gems:
+did_you_mean 1.1.0 ruby
+io-console 0.4.6 ruby
+rake 12.3.1 ruby
+bundler 1.16.1 ruby
+coderay 1.1.2 ruby
+httpclient 2.8.3 ruby
+json 1.8.6 ruby
+mini_portile2 2.3.0 ruby
+nokogiri 1.8.2 ruby
+opengl 0.10.0 ruby
+method_source 0.8.2 ruby
+slop 3.6.0 ruby
+pry 0.10.4 ruby
+yard 0.9.12 ruby
+pry-doc 0.6.0 ruby
+puma 3.10.0 ruby
+qtbindings 4.8.6.4 ruby
+rack 2.0.4 ruby
+rdoc 4.3.0 ruby
+rubyzip 1.2.1 ruby
+snmp 1.2.0 ruby
+uuidtools 2.1.5 ruby
+cosmos 4.1.1 ruby
+ruby-termios 0.9.6 ruby
+
+All Threads Backtraces:
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/qtbindings-4.8.6.4/lib/Qt4.rb:50:in `sleep'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/qtbindings-4.8.6.4/lib/Qt4.rb:50:in `ruby_thread_timeout'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/qtbindings-4.8.6.4/lib/Qt/qtruby4.rb:479:in `qt_metacall'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/qtbindings-4.8.6.4/lib/Qt/qtruby4.rb:479:in `method_missing'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/qtbindings-4.8.6.4/lib/Qt/qtruby4.rb:479:in `exec'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/gui/qt_tool.rb:297:in `block in run'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/top_level.rb:716:in `set_working_dir'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/gui/qt_tool.rb:278:in `run'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/cmd_tlm_server_gui.rb:641:in `block in run'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/top_level.rb:531:in `catch_fatal_exception'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/cmd_tlm_server_gui.rb:607:in `run'
+/Users/talagap/Dropbox/UIndy/Robots/WoodenRC/Cosmos/tools/mac/CmdTlmServer.app/Contents/MacOS/CmdTlmServer.rb:15:in `block in <main>'
+/Users/talagap/Dropbox/UIndy/Robots/WoodenRC/Cosmos/tools/mac/CmdTlmServer.app/Contents/MacOS/tool_launch.rb:16:in `tool_launch'
+/Users/talagap/Dropbox/UIndy/Robots/WoodenRC/Cosmos/tools/mac/CmdTlmServer.app/Contents/MacOS/CmdTlmServer.rb:13:in `<main>'
+
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/utilities/sleeper.rb:27:in `select'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/utilities/sleeper.rb:27:in `sleep'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/gui/qt_tool.rb:459:in `block (2 levels) in redirect_io'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/gui/qt_tool.rb:444:in `loop'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/gui/qt_tool.rb:444:in `block in redirect_io'
+
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/utilities/sleeper.rb:27:in `select'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/utilities/sleeper.rb:27:in `sleep'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/cmd_tlm_server_gui.rb:433:in `block in process_server_messages'
+
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/puma-3.10.0/lib/puma/single.rb:106:in `join'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/puma-3.10.0/lib/puma/single.rb:106:in `run'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/puma-3.10.0/lib/puma/launcher.rb:183:in `run'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/puma-3.10.0/lib/rack/handler/puma.rb:69:in `run'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/json_drb.rb:140:in `block in start_service'
+
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/puma-3.10.0/lib/puma/reactor.rb:29:in `select'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/puma-3.10.0/lib/puma/reactor.rb:29:in `run_internal'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/puma-3.10.0/lib/puma/reactor.rb:154:in `block in run_in_thread'
+
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/puma-3.10.0/lib/puma/thread_pool.rb:244:in `sleep'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/puma-3.10.0/lib/puma/thread_pool.rb:244:in `block in start!'
+
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/puma-3.10.0/lib/puma/thread_pool.rb:215:in `sleep'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/puma-3.10.0/lib/puma/thread_pool.rb:215:in `block in start!'
+
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:353:in `select'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:353:in `handle_servers'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:327:in `block in run'
+
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:219:in `pop'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:219:in `read'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:86:in `block in start'
+
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:360:in `select'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:360:in `rescue in listen_thread_body'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:357:in `listen_thread_body'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:346:in `block (2 levels) in start_listen_thread'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:345:in `loop'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:345:in `block in start_listen_thread'
+
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:581:in `sleep'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:581:in `wait'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:581:in `block in check_for_dead_clients'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:580:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:580:in `check_for_dead_clients'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:474:in `rescue in block in write_thread_body'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:470:in `block in write_thread_body'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:468:in `loop'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:468:in `write_thread_body'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:130:in `block (2 levels) in connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:129:in `loop'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:129:in `block in connect'
+
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:494:in `sleep'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:494:in `wait'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:494:in `block (2 levels) in write_raw_thread_body'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:493:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:493:in `rescue in block in write_raw_thread_body'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:488:in `block in write_raw_thread_body'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:486:in `loop'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:486:in `write_raw_thread_body'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:142:in `block (2 levels) in connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:141:in `loop'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:141:in `block in connect'
+
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:219:in `pop'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:219:in `read'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:86:in `block in start'
+
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/utilities/sleeper.rb:27:in `select'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/utilities/sleeper.rb:27:in `sleep'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:108:in `block in start'
+
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/cmd_tlm_server.rb:434:in `pop'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/cmd_tlm_server.rb:434:in `get_limits_event'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/api.rb:976:in `get_limits_event'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/cmd_tlm_server_interface.rb:49:in `read'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:86:in `block in start'
+
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/utilities/sleeper.rb:27:in `select'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/utilities/sleeper.rb:27:in `sleep'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/limits_groups_background_task.rb:94:in `block in call'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/limits_groups_background_task.rb:87:in `loop'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/limits_groups_background_task.rb:87:in `call'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/background_tasks.rb:42:in `block in start'
+
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/utilities/sleeper.rb:27:in `select'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/utilities/sleeper.rb:27:in `sleep'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/cmd_tlm_server.rb:740:in `block in start'
+
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:360:in `select'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:360:in `rescue in listen_thread_body'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:357:in `listen_thread_body'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:346:in `block (2 levels) in start_listen_thread'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:345:in `loop'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:345:in `block in start_listen_thread'
+
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:581:in `sleep'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:581:in `wait'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:581:in `block in check_for_dead_clients'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:580:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:580:in `check_for_dead_clients'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:474:in `rescue in block in write_thread_body'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:470:in `block in write_thread_body'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:468:in `loop'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:468:in `write_thread_body'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:130:in `block (2 levels) in connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:129:in `loop'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:129:in `block in connect'
+
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:494:in `sleep'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:494:in `wait'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:494:in `block (2 levels) in write_raw_thread_body'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:493:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:493:in `rescue in block in write_raw_thread_body'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:488:in `block in write_raw_thread_body'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:486:in `loop'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:486:in `write_raw_thread_body'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:142:in `block (2 levels) in connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:141:in `loop'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:141:in `block in connect'
+
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:360:in `select'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:360:in `rescue in listen_thread_body'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:357:in `listen_thread_body'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:346:in `block (2 levels) in start_listen_thread'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:345:in `loop'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:345:in `block in start_listen_thread'
+
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:581:in `sleep'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:581:in `wait'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:581:in `block in check_for_dead_clients'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:580:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:580:in `check_for_dead_clients'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:474:in `rescue in block in write_thread_body'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:470:in `block in write_thread_body'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:468:in `loop'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:468:in `write_thread_body'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:130:in `block (2 levels) in connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:129:in `loop'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:129:in `block in connect'
+
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:494:in `sleep'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:494:in `wait'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:494:in `block (2 levels) in write_raw_thread_body'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:493:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:493:in `rescue in block in write_raw_thread_body'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:488:in `block in write_raw_thread_body'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:486:in `loop'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:486:in `write_raw_thread_body'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:142:in `block (2 levels) in connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:141:in `loop'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/tcpip_server_interface.rb:141:in `block in connect'
+
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/utilities/sleeper.rb:27:in `select'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/utilities/sleeper.rb:27:in `sleep'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/cmd_tlm_server_gui.rb:376:in `block in handle_tab'
+
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/top_level.rb:493:in `backtrace'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/top_level.rb:493:in `block (2 levels) in write_exception_file'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/top_level.rb:492:in `each'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/top_level.rb:492:in `block in write_exception_file'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/top_level.rb:430:in `block (2 levels) in create_log_file'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/top_level.rb:427:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/top_level.rb:427:in `block in create_log_file'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/top_level.rb:716:in `set_working_dir'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/top_level.rb:400:in `create_log_file'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/top_level.rb:457:in `write_exception_file'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:217:in `handle_connection_failed'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:75:in `rescue in block in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:68:in `block in start'
+
+
+

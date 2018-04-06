@@ -1,0 +1,313 @@
+2018/03/27 11:30:00.955  INFO: COSMOS Version: 4.1.1
+2018/03/27 11:30:01.111  INFO: Processing target definition in file '/Users/talagap/Dropbox/UIndy/Robots/WoodenRC/Cosmos/config/targets/INST/target.txt'
+2018/03/27 11:30:01.115  INFO: Processing target definition in file '/Users/talagap/Dropbox/UIndy/Robots/WoodenRC/Cosmos/config/targets/INST/target.txt'
+2018/03/27 11:30:01.117  INFO: Processing target definition in file '/Users/talagap/Dropbox/UIndy/Robots/WoodenRC/Cosmos/config/targets/EXAMPLE/target.txt'
+2018/03/27 11:30:01.162  INFO: Processing target definition in file '/Users/talagap/Dropbox/UIndy/Robots/WoodenRC/Cosmos/config/targets/TEMPLATED/target.txt'
+2018/03/27 11:30:01.179  INFO: Processing target definition in file '/Users/talagap/Dropbox/UIndy/Robots/WoodenRC/Cosmos/config/targets/SYSTEM/target.txt'
+2018/03/27 11:30:01.181  INFO: Processing CmdTlmServer configuration in file: /Users/talagap/Dropbox/UIndy/Robots/WoodenRC/Cosmos/config/tools/cmd_tlm_server/cmd_tlm_server.txt
+2018/03/27 11:30:01.182  INFO: Processing CmdTlmServer configuration in file: /Users/talagap/Dropbox/UIndy/Robots/WoodenRC/Cosmos/config/targets/INST/cmd_tlm_server.txt
+2018/03/27 11:30:01.183  INFO: Processing CmdTlmServer configuration in file: /Users/talagap/Dropbox/UIndy/Robots/WoodenRC/Cosmos/config/targets/INST/cmd_tlm_server2.txt
+2018/03/27 11:30:01.184  INFO: Processing CmdTlmServer configuration in file: /Users/talagap/Dropbox/UIndy/Robots/WoodenRC/Cosmos/config/targets/EXAMPLE/cmd_tlm_server.txt
+2018/03/27 11:30:01.185  INFO: Processing CmdTlmServer configuration in file: /Users/talagap/Dropbox/UIndy/Robots/WoodenRC/Cosmos/config/targets/TEMPLATED/cmd_tlm_server.txt
+2018/03/27 11:30:01.216  INFO: Marshal load success: /Users/talagap/Dropbox/UIndy/Robots/WoodenRC/Cosmos/outputs/tmp/marshal_0eb0803404904a3dd67667ba680fb93e.bin
+2018/03/27 11:30:01.325  INFO: Creating thread for router INST_ROUTER
+2018/03/27 11:30:01.325  INFO: Creating thread for router PREIDENTIFIED_ROUTER
+2018/03/27 11:30:01.325  INFO: Creating thread for router PREIDENTIFIED_CMD_ROUTER
+2018/03/27 11:30:01.325  INFO: Creating thread for interface INST_INT
+2018/03/27 11:30:01.326  INFO: Creating thread for interface INST2_INT
+2018/03/27 11:30:01.326  INFO: Creating thread for interface PHOTON_INT
+2018/03/27 11:30:01.326  INFO: Creating thread for interface SYSTEM_INT
+2018/03/27 11:30:01.326  INFO: Starting packet reading for INST_ROUTER
+2018/03/27 11:30:01.326  INFO: Connecting to INST_ROUTER...
+2018/03/27 11:30:01.329  INFO: INST_ROUTER Connection Success
+2018/03/27 11:30:01.329  INFO: Starting packet reading for PREIDENTIFIED_ROUTER
+2018/03/27 11:30:01.329  INFO: Connecting to PREIDENTIFIED_ROUTER...
+2018/03/27 11:30:01.333  INFO: PREIDENTIFIED_ROUTER Connection Success
+2018/03/27 11:30:01.333  INFO: Starting connection maintenance for PREIDENTIFIED_CMD_ROUTER
+2018/03/27 11:30:01.333  INFO: Connecting to PREIDENTIFIED_CMD_ROUTER...
+2018/03/27 11:30:01.333  INFO: PREIDENTIFIED_CMD_ROUTER Connection Success
+2018/03/27 11:30:01.333  INFO: Starting packet reading for INST_INT
+2018/03/27 11:30:01.333  INFO: Connecting to INST_INT...
+2018/03/27 11:30:01.333  INFO: Starting packet reading for INST2_INT
+2018/03/27 11:30:01.334  INFO: Connecting to INST2_INT...
+2018/03/27 11:30:01.334  INFO: Starting packet reading for PHOTON_INT
+2018/03/27 11:30:01.334  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:30:01.369  INFO: Starting packet reading for SYSTEM_INT
+2018/03/27 11:30:01.369  INFO: Connecting to SYSTEM_INT...
+2018/03/27 11:30:01.369  INFO: SYSTEM_INT Connection Success
+2018/03/27 11:30:01.369  INFO: INST2_INT Connection Success
+2018/03/27 11:30:01.369  INFO: PHOTON_INT Connection Success
+2018/03/27 11:30:01.460  INFO: INST_INT Connection Success
+2018/03/27 11:30:01.461  INFO: Log File Opened : /Users/talagap/Dropbox/UIndy/Robots/WoodenRC/Cosmos/outputs/logs/2018_03_27_11_30_01_tlm.bin
+2018/03/27 11:30:01.461  INFO: INST HEALTH_STATUS TEMP1 = 54.888149999999996 is GREEN_HIGH
+2018/03/27 11:30:01.461  ERROR: INST HEALTH_STATUS TEMP2 = -Infinity is RED_LOW
+2018/03/27 11:30:01.461  ERROR: INST HEALTH_STATUS TEMP3 = 79.94390000000001 is RED_HIGH
+2018/03/27 11:30:01.461  INFO: INST HEALTH_STATUS TEMP4 = -0.057599999999993656 is GREEN
+2018/03/27 11:30:01.462  INFO: INST2 HEALTH_STATUS TEMP1 = 54.888149999999996 is GREEN_HIGH
+2018/03/27 11:30:01.462  ERROR: INST2 HEALTH_STATUS TEMP2 = -Infinity is RED_LOW
+2018/03/27 11:30:01.462  ERROR: INST2 HEALTH_STATUS TEMP3 = 79.94390000000001 is RED_HIGH
+2018/03/27 11:30:01.462  INFO: INST2 HEALTH_STATUS TEMP4 = -0.057599999999993656 is GREEN
+2018/03/27 11:30:02.347  INFO: INST HEALTH_STATUS TEMP2 = -22.164702929687493 is GREEN
+2018/03/27 11:30:02.348  INFO: INST2 HEALTH_STATUS TEMP2 = -22.164702929687493 is GREEN
+2018/03/27 11:30:03.346  WARN: INST HEALTH_STATUS TEMP1 = 64.77625 is YELLOW_HIGH
+2018/03/27 11:30:03.347  WARN: INST2 HEALTH_STATUS TEMP1 = 64.77625 is YELLOW_HIGH
+2018/03/27 11:30:04.346  ERROR: INST2_INT - Unknown 10 byte packet starting: 00000000000000000000
+2018/03/27 11:30:04.348  ERROR: INST_INT - Unknown 10 byte packet starting: 00000000000000000000
+2018/03/27 11:30:05.188  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/27 11:30:06.336  INFO: Enabling Limits Group: INST2_TEMP2
+2018/03/27 11:30:06.336  INFO: Enabling Limits Group: INST2_GROUND
+2018/03/27 11:30:06.345  WARN: INST HEALTH_STATUS GROUND2STATUS = UNAVAILABLE is YELLOW
+2018/03/27 11:30:06.345  WARN: INST2 HEALTH_STATUS GROUND2STATUS = UNAVAILABLE is YELLOW
+2018/03/27 11:30:07.345  ERROR: INST HEALTH_STATUS TEMP1 = 84.55245000000002 is RED_HIGH
+2018/03/27 11:30:07.346  INFO: cmd("INST COLLECT with TYPE NORMAL, DURATION 5.0, OPCODE 171, TEMP 0.0")
+2018/03/27 11:30:07.347  ERROR: INST2 HEALTH_STATUS TEMP1 = 84.55245000000002 is RED_HIGH
+2018/03/27 11:30:07.347  INFO: cmd("INST COLLECT with TYPE NORMAL, DURATION 5.0, OPCODE 171, TEMP 0.0")
+2018/03/27 11:30:07.348  INFO: Log File Opened : /Users/talagap/Dropbox/UIndy/Robots/WoodenRC/Cosmos/outputs/logs/2018_03_27_11_30_07_cmd.bin
+2018/03/27 11:30:08.344  ERROR: INST HEALTH_STATUS TEMP2 = NaN is RED_LOW
+2018/03/27 11:30:08.361  ERROR: INST2 HEALTH_STATUS TEMP2 = NaN is RED_LOW
+2018/03/27 11:30:08.362  INFO: Disabling Limits Group: INST2_TEMP2
+2018/03/27 11:30:08.362  INFO: Disabling Limits Group: INST2_GROUND
+2018/03/27 11:30:08.362  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/27 11:30:11.279  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/27 11:30:11.346  WARN: INST HEALTH_STATUS GROUND1STATUS = UNAVAILABLE is YELLOW
+2018/03/27 11:30:11.346  INFO: INST HEALTH_STATUS GROUND2STATUS = CONNECTED is GREEN
+2018/03/27 11:30:12.345  INFO: INST HEALTH_STATUS TEMP2 = -32.71371171874999 is GREEN
+2018/03/27 11:30:12.382  INFO: Enabling Limits Group: INST2_TEMP2
+2018/03/27 11:30:12.382  INFO: Enabling Limits Group: INST2_GROUND
+2018/03/27 11:30:13.158  INFO: User disconnecting interface INST_INT
+2018/03/27 11:30:13.158  INFO: Killing thread for interface INST_INT
+2018/03/27 11:30:13.165  INFO: Clean disconnect from INST_INT (returned nil)
+2018/03/27 11:30:13.165  INFO: Connection Lost for INST_INT
+2018/03/27 11:30:13.165  INFO: Stopped packet reading for INST_INT
+2018/03/27 11:30:13.169  INFO: Disconnected from interface INST_INT
+2018/03/27 11:30:13.347  WARN: INST2 HEALTH_STATUS TEMP1 = 79.7731 is YELLOW_HIGH
+2018/03/27 11:30:13.347  INFO: INST2 HEALTH_STATUS TEMP2 = -33.768612597656244 is GREEN
+2018/03/27 11:30:13.347  WARN: INST2 HEALTH_STATUS GROUND1STATUS = UNAVAILABLE is YELLOW
+2018/03/27 11:30:14.197  INFO: User disconnecting interface INST2_INT
+2018/03/27 11:30:14.197  INFO: Killing thread for interface INST2_INT
+2018/03/27 11:30:14.197  INFO: Clean disconnect from INST2_INT (returned nil)
+2018/03/27 11:30:14.197  INFO: Connection Lost for INST2_INT
+2018/03/27 11:30:14.197  INFO: Stopped packet reading for INST2_INT
+2018/03/27 11:30:14.207  INFO: Disconnected from interface INST2_INT
+2018/03/27 11:30:17.301  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/27 11:30:23.334  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/27 11:30:28.022  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/27 11:30:31.300  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/27 11:30:37.341  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/27 11:30:40.209  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/27 11:30:46.250  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/27 11:30:52.394  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/27 11:30:57.828  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/27 11:31:03.965  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/27 11:31:09.870  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/27 11:31:16.048  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/27 11:31:21.912  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/27 11:31:28.028  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/27 11:31:34.070  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/27 11:31:39.974  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/27 11:31:46.153  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/27 11:31:52.194  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/27 11:31:58.037  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/27 11:32:04.059  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/27 11:32:10.079  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/27 11:32:16.258  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:09:49.532  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:09:50.142  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:09:52.800  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:09:54.609  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:09:55.273  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:09:55.941  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:09:57.566  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:09:58.789  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:10:00.608  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:10:06.776  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:10:11.059  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:10:14.087  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:10:17.323  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:10:18.347  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:10:19.754  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:10:25.795  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:10:31.789  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:10:34.207  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:10:38.622  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:10:40.261  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:10:46.212  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:10:50.528  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:10:55.211  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:11:01.166  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:11:07.189  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:11:09.619  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:11:12.276  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:11:18.456  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:11:24.439  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:11:30.336  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:11:36.435  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:11:42.521  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:11:48.526  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:11:54.512  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:12:00.447  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:12:06.597  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:12:12.626  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:12:18.549  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:12:24.684  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:12:30.649  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:12:36.571  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:12:42.587  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:12:48.671  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:12:54.629  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:13:00.653  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:13:06.814  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:13:12.697  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:13:18.715  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:13:24.734  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:13:30.765  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:13:36.778  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:13:43.048  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:13:48.903  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:13:55.028  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:14:00.928  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:14:06.883  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:14:12.906  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:14:19.219  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:14:24.957  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:14:29.366  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:14:35.476  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:14:41.516  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:14:47.440  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:14:53.600  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:14:59.447  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:15:05.581  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:15:11.514  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:15:17.510  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:15:23.530  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:15:29.551  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:15:35.575  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:15:41.729  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:15:47.700  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:15:53.636  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:15:59.732  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:16:05.677  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:16:11.835  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:16:17.855  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:16:23.918  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:16:29.886  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:16:35.899  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:16:41.802  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:16:47.824  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:16:54.024  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:16:59.865  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:17:06.004  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:17:12.046  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:17:18.012  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:17:24.130  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:17:30.030  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:17:36.112  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:17:42.152  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:17:48.034  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:17:54.236  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:18:00.091  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:18:06.115  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:18:12.258  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:18:18.256  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:18:24.341  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:18:30.183  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:18:36.644  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:18:42.363  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:18:48.373  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:18:54.265  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:19:00.285  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:19:06.362  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:19:12.572  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:19:18.442  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:19:24.555  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:19:30.504  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:19:36.419  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:19:42.575  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:19:48.453  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:19:54.504  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:20:00.507  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:20:06.660  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:20:12.537  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:20:18.649  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:20:24.675  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:20:30.909  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:20:36.692  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:20:42.645  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:20:48.795  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:20:54.690  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:21:00.705  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:21:06.737  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:21:12.893  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:21:18.864  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:21:24.976  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:21:30.815  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:21:36.846  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:21:43.101  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:21:48.918  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:21:54.894  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:22:01.124  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:22:07.087  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:22:13.104  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:22:19.008  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:22:25.188  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:22:31.026  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:22:37.165  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:22:43.210  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:22:49.135  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:22:55.294  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:23:01.335  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:23:07.150  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:23:13.316  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:23:19.203  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:23:25.502  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:23:31.340  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/28 14:23:37.495  ERROR: PHOTON DATA received with actual packet length of 112 but defined length of 14
+2018/03/29 15:15:48.384  ERROR: PHOTON DATA received with actual packet length of 108 but defined length of 14
+2018/03/29 15:15:51.317  ERROR: PHOTON DATA received with actual packet length of 108 but defined length of 14
+2018/03/29 15:15:54.655  ERROR: PHOTON DATA received with actual packet length of 108 but defined length of 14
+2018/03/29 15:15:57.459  ERROR: PHOTON DATA received with actual packet length of 108 but defined length of 14
+2018/03/29 15:16:00.596  ERROR: PHOTON DATA received with actual packet length of 108 but defined length of 14
+2018/03/29 15:16:03.835  ERROR: PHOTON DATA received with actual packet length of 108 but defined length of 14
+2018/03/29 15:16:06.717  ERROR: PHOTON DATA received with actual packet length of 108 but defined length of 14
+2018/03/29 15:16:09.779  ERROR: PHOTON DATA received with actual packet length of 108 but defined length of 14
+2018/03/29 15:16:15.805  ERROR: PHOTON DATA received with actual packet length of 108 but defined length of 14
+2018/03/29 15:16:21.959  ERROR: PHOTON DATA received with actual packet length of 108 but defined length of 14
+2018/03/29 15:16:27.905  ERROR: PHOTON DATA received with actual packet length of 108 but defined length of 14
+2018/03/29 15:16:33.820  ERROR: PHOTON DATA received with actual packet length of 108 but defined length of 14
+2018/03/29 15:16:39.841  ERROR: PHOTON DATA received with actual packet length of 108 but defined length of 14
+2018/03/29 15:16:45.887  ERROR: PHOTON DATA received with actual packet length of 108 but defined length of 14
+2018/03/29 15:16:51.883  ERROR: PHOTON DATA received with actual packet length of 108 but defined length of 14
+2018/03/29 15:16:57.904  ERROR: PHOTON DATA received with actual packet length of 108 but defined length of 14
+2018/03/29 15:17:03.925  ERROR: PHOTON DATA received with actual packet length of 108 but defined length of 14
+2018/03/29 15:17:10.088  ERROR: PHOTON DATA received with actual packet length of 108 but defined length of 14
+2018/03/29 15:17:16.039  ERROR: PHOTON DATA received with actual packet length of 108 but defined length of 14
+2018/03/29 15:17:21.998  ERROR: PHOTON DATA received with actual packet length of 108 but defined length of 14
+2018/04/02 06:57:47.606  INFO: Log File Closed : /Users/talagap/Dropbox/UIndy/Robots/WoodenRC/Cosmos/outputs/logs/2018_03_27_11_30_07_cmd.bin
+2018/04/02 06:57:47.609  INFO: Log File Closed : /Users/talagap/Dropbox/UIndy/Robots/WoodenRC/Cosmos/outputs/logs/2018_03_27_11_30_01_tlm.bin
+2018/04/02 06:57:47.609  INFO: Clean disconnect from SYSTEM_INT (returned nil)
+2018/04/02 06:57:47.609  INFO: Connection Lost for SYSTEM_INT
+2018/04/02 06:57:47.710  INFO: Killing thread for router INST_ROUTER
+2018/04/02 06:57:47.710  INFO: Clean disconnect from INST_ROUTER (returned nil)
+2018/04/02 06:57:47.710  INFO: Connection Lost for INST_ROUTER
+2018/04/02 06:57:47.776  INFO: Stopped packet reading for INST_ROUTER
+2018/04/02 06:57:47.783  INFO: Disconnected from router INST_ROUTER
+2018/04/02 06:57:47.783  INFO: Killing thread for router PREIDENTIFIED_ROUTER
+2018/04/02 06:57:47.783  INFO: Clean disconnect from PREIDENTIFIED_ROUTER (returned nil)
+2018/04/02 06:57:47.783  INFO: Connection Lost for PREIDENTIFIED_ROUTER
+2018/04/02 06:57:47.882  INFO: Stopped packet reading for PREIDENTIFIED_ROUTER
+2018/04/02 06:57:47.886  INFO: Disconnected from router PREIDENTIFIED_ROUTER
+2018/04/02 06:57:47.886  INFO: Killing thread for router PREIDENTIFIED_CMD_ROUTER
+2018/04/02 06:57:47.886  INFO: Stopped packet reading for PREIDENTIFIED_CMD_ROUTER
+2018/04/02 06:57:47.977  INFO: Disconnected from router PREIDENTIFIED_CMD_ROUTER
+2018/04/02 06:57:47.998  INFO: Disconnected from interface INST_INT
+2018/04/02 06:57:47.998  INFO: Disconnected from interface INST2_INT
+2018/04/02 06:57:47.998  INFO: Killing thread for interface PHOTON_INT
+2018/04/02 06:57:47.998  ERROR: Error reading from interface : PHOTON_INT
+2018/04/02 06:57:47.999  INFO: Connection Lost for PHOTON_INT: EBADF : Bad file descriptor
+2018/04/02 06:57:47.999  INFO: Stopped packet reading for PHOTON_INT
+2018/04/02 06:57:47.999  INFO: Disconnected from interface PHOTON_INT
+2018/04/02 06:57:47.999  INFO: Killing thread for interface SYSTEM_INT
+2018/04/02 06:57:47.999  INFO: Stopped packet reading for SYSTEM_INT
+2018/04/02 06:57:48.009  INFO: Disconnected from interface SYSTEM_INT
+2018/04/02 06:57:48.009  INFO: Disconnected from interface EXAMPLE_INT
+2018/04/02 06:57:48.009  INFO: Disconnected from interface TEMPLATED_INT

@@ -1,0 +1,91 @@
+2018/04/06 00:51:37.972  INFO: COSMOS Version: 4.1.1
+2018/04/06 00:51:38.085  INFO: Processing target definition in file '/Users/talagap/Dropbox/UIndy/Robots/WoodenRC/Cosmos/config/targets/INST/target.txt'
+2018/04/06 00:51:38.088  INFO: Processing target definition in file '/Users/talagap/Dropbox/UIndy/Robots/WoodenRC/Cosmos/config/targets/INST/target.txt'
+2018/04/06 00:51:38.092  INFO: Processing target definition in file '/Users/talagap/Dropbox/UIndy/Robots/WoodenRC/Cosmos/config/targets/EXAMPLE/target.txt'
+2018/04/06 00:51:38.093  INFO: Processing target definition in file '/Users/talagap/Dropbox/UIndy/Robots/WoodenRC/Cosmos/config/targets/TEMPLATED/target.txt'
+2018/04/06 00:51:38.141  INFO: Processing target definition in file '/Users/talagap/Dropbox/UIndy/Robots/WoodenRC/Cosmos/config/targets/SYSTEM/target.txt'
+2018/04/06 00:51:38.143  INFO: Processing CmdTlmServer configuration in file: /Users/talagap/Dropbox/UIndy/Robots/WoodenRC/Cosmos/config/tools/cmd_tlm_server/cmd_tlm_server.txt
+2018/04/06 00:51:38.147  INFO: Processing CmdTlmServer configuration in file: /Users/talagap/Dropbox/UIndy/Robots/WoodenRC/Cosmos/config/targets/INST/cmd_tlm_server.txt
+2018/04/06 00:51:38.148  INFO: Processing CmdTlmServer configuration in file: /Users/talagap/Dropbox/UIndy/Robots/WoodenRC/Cosmos/config/targets/INST/cmd_tlm_server2.txt
+2018/04/06 00:51:38.149  INFO: Processing CmdTlmServer configuration in file: /Users/talagap/Dropbox/UIndy/Robots/WoodenRC/Cosmos/config/targets/EXAMPLE/cmd_tlm_server.txt
+2018/04/06 00:51:38.150  INFO: Processing CmdTlmServer configuration in file: /Users/talagap/Dropbox/UIndy/Robots/WoodenRC/Cosmos/config/targets/TEMPLATED/cmd_tlm_server.txt
+2018/04/06 00:51:38.162  INFO: Marshal file does not exist: /Users/talagap/Dropbox/UIndy/Robots/WoodenRC/Cosmos/outputs/tmp/marshal_127d79fb9ae7c12ee620dd238dbbf09e.bin
+2018/04/06 00:51:38.549  INFO: Creating thread for router INST_ROUTER
+2018/04/06 00:51:38.550  INFO: Creating thread for router PREIDENTIFIED_ROUTER
+2018/04/06 00:51:38.550  INFO: Starting packet reading for INST_ROUTER
+2018/04/06 00:51:38.550  INFO: Connecting to INST_ROUTER...
+2018/04/06 00:51:38.550  INFO: INST_ROUTER Connection Success
+2018/04/06 00:51:38.550  INFO: Creating thread for router PREIDENTIFIED_CMD_ROUTER
+2018/04/06 00:51:38.550  INFO: Creating thread for interface INST_INT
+2018/04/06 00:51:38.551  INFO: Creating thread for interface INST2_INT
+2018/04/06 00:51:38.551  INFO: Creating thread for interface PHOTON_INT
+2018/04/06 00:51:38.551  INFO: Creating thread for interface SYSTEM_INT
+2018/04/06 00:51:38.551  INFO: Starting packet reading for PREIDENTIFIED_ROUTER
+2018/04/06 00:51:38.551  INFO: Connecting to PREIDENTIFIED_ROUTER...
+2018/04/06 00:51:38.552  INFO: PREIDENTIFIED_ROUTER Connection Success
+2018/04/06 00:51:38.552  INFO: Starting connection maintenance for PREIDENTIFIED_CMD_ROUTER
+2018/04/06 00:51:38.552  INFO: Connecting to PREIDENTIFIED_CMD_ROUTER...
+2018/04/06 00:51:38.571  INFO: PREIDENTIFIED_CMD_ROUTER Connection Success
+2018/04/06 00:51:38.571  INFO: Starting packet reading for INST_INT
+2018/04/06 00:51:38.571  INFO: Connecting to INST_INT...
+2018/04/06 00:51:38.571  INFO: Starting packet reading for INST2_INT
+2018/04/06 00:51:38.571  INFO: Connecting to INST2_INT...
+2018/04/06 00:51:38.571  INFO: Starting packet reading for PHOTON_INT
+2018/04/06 00:51:38.571  INFO: Connecting to PHOTON_INT...
+2018/04/06 00:51:38.571  INFO: Starting packet reading for SYSTEM_INT
+2018/04/06 00:51:38.571  INFO: Connecting to SYSTEM_INT...
+2018/04/06 00:51:38.571  INFO: SYSTEM_INT Connection Success
+2018/04/06 00:51:38.653  INFO: INST_INT Connection Success
+2018/04/06 00:51:38.653  INFO: PHOTON_INT Connection Success
+2018/04/06 00:51:38.654  INFO: INST2_INT Connection Success
+2018/04/06 00:51:38.685  INFO: INST2 HEALTH_STATUS TEMP1 = 54.888149999999996 is GREEN_HIGH
+2018/04/06 00:51:38.686  ERROR: INST2 HEALTH_STATUS TEMP2 = -Infinity is RED_LOW
+2018/04/06 00:51:38.686  ERROR: INST2 HEALTH_STATUS TEMP3 = 79.94390000000001 is RED_HIGH
+2018/04/06 00:51:38.686  INFO: INST2 HEALTH_STATUS TEMP4 = -0.057599999999993656 is GREEN
+2018/04/06 00:51:38.687  INFO: Log File Opened : /Users/talagap/Dropbox/UIndy/Robots/WoodenRC/Cosmos/outputs/logs/2018_04_06_00_51_38_tlm.bin
+2018/04/06 00:51:38.688  INFO: INST HEALTH_STATUS TEMP1 = 54.888149999999996 is GREEN_HIGH
+2018/04/06 00:51:38.688  ERROR: INST HEALTH_STATUS TEMP2 = -Infinity is RED_LOW
+2018/04/06 00:51:38.688  ERROR: INST HEALTH_STATUS TEMP3 = 79.94390000000001 is RED_HIGH
+2018/04/06 00:51:38.688  INFO: INST HEALTH_STATUS TEMP4 = -0.057599999999993656 is GREEN
+2018/04/06 00:51:39.582  INFO: INST HEALTH_STATUS TEMP2 = -22.164702929687493 is GREEN
+2018/04/06 00:51:39.583  INFO: INST2 HEALTH_STATUS TEMP2 = -22.164702929687493 is GREEN
+2018/04/06 00:51:40.595  WARN: INST HEALTH_STATUS TEMP1 = 64.77625 is YELLOW_HIGH
+2018/04/06 00:51:40.596  WARN: INST2 HEALTH_STATUS TEMP1 = 64.77625 is YELLOW_HIGH
+2018/04/06 00:51:41.146  INFO: User disconnecting interface INST_INT
+2018/04/06 00:51:41.146  INFO: Killing thread for interface INST_INT
+2018/04/06 00:51:41.146  INFO: Clean disconnect from INST_INT (returned nil)
+2018/04/06 00:51:41.146  INFO: Connection Lost for INST_INT
+2018/04/06 00:51:41.146  INFO: Stopped packet reading for INST_INT
+2018/04/06 00:51:41.156  INFO: Disconnected from interface INST_INT
+2018/04/06 00:51:41.480  INFO: User disconnecting interface INST2_INT
+2018/04/06 00:51:41.480  INFO: Killing thread for interface INST2_INT
+2018/04/06 00:51:41.481  INFO: Clean disconnect from INST2_INT (returned nil)
+2018/04/06 00:51:41.481  INFO: Connection Lost for INST2_INT
+2018/04/06 00:51:41.481  INFO: Stopped packet reading for INST2_INT
+2018/04/06 00:51:41.490  INFO: Disconnected from interface INST2_INT
+2018/04/06 00:51:43.574  INFO: Enabling Limits Group: INST2_TEMP2
+2018/04/06 00:51:43.574  INFO: Enabling Limits Group: INST2_GROUND
+2018/04/06 00:53:11.899  ERROR: PHOTON DATA received with actual packet length of 248 but defined length of 124
+2018/04/06 00:53:25.420  ERROR: PHOTON DATA received with actual packet length of 248 but defined length of 124
+2018/04/06 00:53:46.185  INFO: Tcpip server accepted connection from (127.0.0.1):62883
+2018/04/06 00:54:01.951  ERROR: PHOTON DATA received with actual packet length of 248 but defined length of 124
+2018/04/06 00:55:04.014  ERROR: PHOTON DATA received with actual packet length of 248 but defined length of 124
+2018/04/06 00:56:09.845  ERROR: PHOTON DATA received with actual packet length of 248 but defined length of 124
+2018/04/06 00:56:17.536  ERROR: PHOTON DATA received with actual packet length of 372 but defined length of 124
+2018/04/06 00:57:36.609  ERROR: PHOTON DATA received with actual packet length of 372 but defined length of 124
+2018/04/06 01:00:48.544  ERROR: PHOTON DATA received with actual packet length of 248 but defined length of 124
+2018/04/06 01:02:24.066  INFO: Tcpip server lost read connection to (127.0.0.1):62883
+2018/04/06 01:02:24.113  INFO: Tcpip server lost write connection to (127.0.0.1):62883
+2018/04/06 01:02:28.909  ERROR: Timeout waiting for data to be read
+2018/04/06 01:02:28.909  INFO: Clean disconnect from PHOTON_INT (returned nil)
+2018/04/06 01:02:28.909  INFO: Connection Lost for PHOTON_INT
+2018/04/06 01:02:29.071  INFO: Tcpip server accepted connection from (127.0.0.1):63006
+2018/04/06 01:02:33.912  INFO: Connecting to PHOTON_INT...
+2018/04/06 01:02:33.946  INFO: PHOTON_INT Connection Success
+2018/04/06 01:02:56.872  ERROR: PHOTON DATA received with actual packet length of 248 but defined length of 124
+2018/04/06 01:02:58.083  ERROR: PHOTON DATA received with actual packet length of 248 but defined length of 124
+2018/04/06 01:03:12.196  ERROR: PHOTON DATA received with actual packet length of 248 but defined length of 124
+2018/04/06 01:03:42.438  ERROR: PHOTON DATA received with actual packet length of 248 but defined length of 124
+2018/04/06 01:03:47.084  ERROR: PHOTON DATA received with actual packet length of 248 but defined length of 124
+2018/04/06 01:04:13.206  ERROR: PHOTON DATA received with actual packet length of 248 but defined length of 124
+2018/04/06 01:04:47.108  ERROR: PHOTON DATA received with actual packet length of 248 but defined length of 124

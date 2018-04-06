@@ -1,0 +1,1464 @@
+2018/03/27 11:18:07.817  INFO: COSMOS Version: 4.1.1
+2018/03/27 11:18:07.964  INFO: Processing target definition in file '/Users/talagap/Dropbox/UIndy/Robots/WoodenRC/Cosmos/config/targets/INST/target.txt'
+2018/03/27 11:18:07.966  INFO: Processing target definition in file '/Users/talagap/Dropbox/UIndy/Robots/WoodenRC/Cosmos/config/targets/INST/target.txt'
+2018/03/27 11:18:07.968  INFO: Processing target definition in file '/Users/talagap/Dropbox/UIndy/Robots/WoodenRC/Cosmos/config/targets/EXAMPLE/target.txt'
+2018/03/27 11:18:07.969  INFO: Processing target definition in file '/Users/talagap/Dropbox/UIndy/Robots/WoodenRC/Cosmos/config/targets/TEMPLATED/target.txt'
+2018/03/27 11:18:07.970  INFO: Processing target definition in file '/Users/talagap/Dropbox/UIndy/Robots/WoodenRC/Cosmos/config/targets/SYSTEM/target.txt'
+2018/03/27 11:18:08.023  INFO: Processing CmdTlmServer configuration in file: /Users/talagap/Dropbox/UIndy/Robots/WoodenRC/Cosmos/config/tools/cmd_tlm_server/cmd_tlm_server.txt
+2018/03/27 11:18:08.025  INFO: Processing CmdTlmServer configuration in file: /Users/talagap/Dropbox/UIndy/Robots/WoodenRC/Cosmos/config/targets/INST/cmd_tlm_server.txt
+2018/03/27 11:18:08.026  INFO: Processing CmdTlmServer configuration in file: /Users/talagap/Dropbox/UIndy/Robots/WoodenRC/Cosmos/config/targets/INST/cmd_tlm_server2.txt
+2018/03/27 11:18:08.027  INFO: Processing CmdTlmServer configuration in file: /Users/talagap/Dropbox/UIndy/Robots/WoodenRC/Cosmos/config/targets/EXAMPLE/cmd_tlm_server.txt
+2018/03/27 11:18:08.027  INFO: Processing CmdTlmServer configuration in file: /Users/talagap/Dropbox/UIndy/Robots/WoodenRC/Cosmos/config/targets/TEMPLATED/cmd_tlm_server.txt
+2018/03/27 11:18:08.041  INFO: Marshal file does not exist: /Users/talagap/Dropbox/UIndy/Robots/WoodenRC/Cosmos/outputs/tmp/marshal_0eb0803404904a3dd67667ba680fb93e.bin
+2018/03/27 11:18:08.418  INFO: Creating thread for router INST_ROUTER
+2018/03/27 11:18:08.418  INFO: Creating thread for router PREIDENTIFIED_ROUTER
+2018/03/27 11:18:08.418  INFO: Starting packet reading for INST_ROUTER
+2018/03/27 11:18:08.418  INFO: Connecting to INST_ROUTER...
+2018/03/27 11:18:08.419  INFO: INST_ROUTER Connection Success
+2018/03/27 11:18:08.419  INFO: Creating thread for router PREIDENTIFIED_CMD_ROUTER
+2018/03/27 11:18:08.419  INFO: Creating thread for interface INST_INT
+2018/03/27 11:18:08.419  INFO: Creating thread for interface INST2_INT
+2018/03/27 11:18:08.419  INFO: Creating thread for interface PHOTON_INT
+2018/03/27 11:18:08.419  INFO: Creating thread for interface SYSTEM_INT
+2018/03/27 11:18:08.420  INFO: Starting packet reading for PREIDENTIFIED_ROUTER
+2018/03/27 11:18:08.420  INFO: Connecting to PREIDENTIFIED_ROUTER...
+2018/03/27 11:18:08.420  INFO: PREIDENTIFIED_ROUTER Connection Success
+2018/03/27 11:18:08.420  INFO: Starting connection maintenance for PREIDENTIFIED_CMD_ROUTER
+2018/03/27 11:18:08.420  INFO: Connecting to PREIDENTIFIED_CMD_ROUTER...
+2018/03/27 11:18:08.437  INFO: PREIDENTIFIED_CMD_ROUTER Connection Success
+2018/03/27 11:18:08.437  INFO: Starting packet reading for INST_INT
+2018/03/27 11:18:08.437  INFO: Connecting to INST_INT...
+2018/03/27 11:18:08.438  INFO: Starting packet reading for INST2_INT
+2018/03/27 11:18:08.438  INFO: Connecting to INST2_INT...
+2018/03/27 11:18:08.438  INFO: Starting packet reading for PHOTON_INT
+2018/03/27 11:18:08.438  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:18:08.438  INFO: Starting packet reading for SYSTEM_INT
+2018/03/27 11:18:08.438  INFO: Connecting to SYSTEM_INT...
+2018/03/27 11:18:08.438  INFO: SYSTEM_INT Connection Success
+2018/03/27 11:18:08.521  INFO: INST2_INT Connection Success
+2018/03/27 11:18:08.554  INFO: INST_INT Connection Success
+2018/03/27 11:18:08.555  INFO: INST2 HEALTH_STATUS TEMP1 = 54.888149999999996 is GREEN_HIGH
+2018/03/27 11:18:08.555  ERROR: INST2 HEALTH_STATUS TEMP2 = -Infinity is RED_LOW
+2018/03/27 11:18:08.555  ERROR: INST2 HEALTH_STATUS TEMP3 = 79.94390000000001 is RED_HIGH
+2018/03/27 11:18:08.555  INFO: INST2 HEALTH_STATUS TEMP4 = -0.057599999999993656 is GREEN
+2018/03/27 11:18:08.556  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:18:08.556  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:18:08.556  INFO: Log File Opened : /Users/talagap/Dropbox/UIndy/Robots/WoodenRC/Cosmos/outputs/logs/2018_03_27_11_18_08_tlm.bin
+2018/03/27 11:18:08.557  INFO: INST HEALTH_STATUS TEMP1 = 54.888149999999996 is GREEN_HIGH
+2018/03/27 11:18:08.557  ERROR: INST HEALTH_STATUS TEMP2 = -Infinity is RED_LOW
+2018/03/27 11:18:08.557  ERROR: INST HEALTH_STATUS TEMP3 = 79.94390000000001 is RED_HIGH
+2018/03/27 11:18:08.557  INFO: INST HEALTH_STATUS TEMP4 = -0.057599999999993656 is GREEN
+2018/03/27 11:18:09.450  INFO: INST2 HEALTH_STATUS TEMP2 = -22.164702929687493 is GREEN
+2018/03/27 11:18:09.451  INFO: INST HEALTH_STATUS TEMP2 = -22.164702929687493 is GREEN
+2018/03/27 11:18:10.448  WARN: INST HEALTH_STATUS TEMP1 = 64.77625 is YELLOW_HIGH
+2018/03/27 11:18:10.449  WARN: INST2 HEALTH_STATUS TEMP1 = 64.77625 is YELLOW_HIGH
+2018/03/27 11:18:11.450  ERROR: INST_INT - Unknown 10 byte packet starting: 00000000000000000000
+2018/03/27 11:18:11.451  ERROR: INST2_INT - Unknown 10 byte packet starting: 00000000000000000000
+2018/03/27 11:18:13.439  INFO: Enabling Limits Group: INST2_TEMP2
+2018/03/27 11:18:13.439  INFO: Enabling Limits Group: INST2_GROUND
+2018/03/27 11:18:13.448  WARN: INST HEALTH_STATUS GROUND2STATUS = UNAVAILABLE is YELLOW
+2018/03/27 11:18:13.449  WARN: INST2 HEALTH_STATUS GROUND2STATUS = UNAVAILABLE is YELLOW
+2018/03/27 11:18:13.559  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:18:13.560  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:18:13.560  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:18:14.449  ERROR: INST HEALTH_STATUS TEMP1 = 84.55245000000002 is RED_HIGH
+2018/03/27 11:18:14.449  INFO: cmd("INST COLLECT with TYPE NORMAL, DURATION 5.0, OPCODE 171, TEMP 0.0")
+2018/03/27 11:18:14.450  INFO: Log File Opened : /Users/talagap/Dropbox/UIndy/Robots/WoodenRC/Cosmos/outputs/logs/2018_03_27_11_18_14_cmd.bin
+2018/03/27 11:18:14.451  ERROR: INST2 HEALTH_STATUS TEMP1 = 84.55245000000002 is RED_HIGH
+2018/03/27 11:18:14.451  INFO: cmd("INST COLLECT with TYPE NORMAL, DURATION 5.0, OPCODE 171, TEMP 0.0")
+2018/03/27 11:18:15.451  ERROR: INST HEALTH_STATUS TEMP2 = NaN is RED_LOW
+2018/03/27 11:18:15.452  ERROR: INST2 HEALTH_STATUS TEMP2 = NaN is RED_LOW
+2018/03/27 11:18:15.952  INFO: Disabling Limits Group: INST2_TEMP2
+2018/03/27 11:18:15.952  INFO: Disabling Limits Group: INST2_GROUND
+2018/03/27 11:18:18.451  WARN: INST HEALTH_STATUS GROUND1STATUS = UNAVAILABLE is YELLOW
+2018/03/27 11:18:18.451  INFO: INST HEALTH_STATUS GROUND2STATUS = CONNECTED is GREEN
+2018/03/27 11:18:18.563  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:18:18.563  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:18:18.563  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:18:19.450  INFO: INST HEALTH_STATUS TEMP2 = -32.71371171874999 is GREEN
+2018/03/27 11:18:19.480  INFO: Enabling Limits Group: INST2_TEMP2
+2018/03/27 11:18:19.481  INFO: Enabling Limits Group: INST2_GROUND
+2018/03/27 11:18:20.450  WARN: INST2 HEALTH_STATUS TEMP1 = 79.7731 is YELLOW_HIGH
+2018/03/27 11:18:20.450  INFO: INST2 HEALTH_STATUS TEMP2 = -33.768612597656244 is GREEN
+2018/03/27 11:18:20.450  WARN: INST2 HEALTH_STATUS GROUND1STATUS = UNAVAILABLE is YELLOW
+2018/03/27 11:18:20.451  WARN: INST HEALTH_STATUS TEMP1 = 79.7731 is YELLOW_HIGH
+2018/03/27 11:18:21.451  WARN: INST2 HEALTH_STATUS TEMP3 = 53.21980000000002 is YELLOW_HIGH
+2018/03/27 11:18:21.452  WARN: INST HEALTH_STATUS TEMP3 = 53.21980000000002 is YELLOW_HIGH
+2018/03/27 11:18:23.449  INFO: INST2 HEALTH_STATUS TEMP3 = 49.10840000000002 is GREEN
+2018/03/27 11:18:23.449  WARN: INST2 HEALTH_STATUS GROUND2STATUS = UNAVAILABLE is YELLOW
+2018/03/27 11:18:23.450  INFO: INST HEALTH_STATUS TEMP3 = 49.10840000000002 is GREEN
+2018/03/27 11:18:23.450  WARN: INST HEALTH_STATUS GROUND2STATUS = UNAVAILABLE is YELLOW
+2018/03/27 11:18:23.567  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:18:23.568  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:18:23.568  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:18:24.451  INFO: INST2 HEALTH_STATUS TEMP1 = 59.545500000000004 is GREEN_HIGH
+2018/03/27 11:18:24.452  INFO: INST HEALTH_STATUS TEMP1 = 59.545500000000004 is GREEN_HIGH
+2018/03/27 11:18:28.451  INFO: INST2 HEALTH_STATUS GROUND1STATUS = CONNECTED is GREEN
+2018/03/27 11:18:28.451  INFO: INST2 HEALTH_STATUS GROUND2STATUS = CONNECTED is GREEN
+2018/03/27 11:18:28.452  INFO: INST HEALTH_STATUS GROUND1STATUS = CONNECTED is GREEN
+2018/03/27 11:18:28.452  INFO: INST HEALTH_STATUS GROUND2STATUS = CONNECTED is GREEN
+2018/03/27 11:18:28.572  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:18:28.572  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:18:28.572  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:18:30.579  INFO: User disconnecting interface INST_INT
+2018/03/27 11:18:30.579  INFO: Killing thread for interface INST_INT
+2018/03/27 11:18:30.579  INFO: Clean disconnect from INST_INT (returned nil)
+2018/03/27 11:18:30.579  INFO: Connection Lost for INST_INT
+2018/03/27 11:18:30.580  INFO: Stopped packet reading for INST_INT
+2018/03/27 11:18:30.590  INFO: Disconnected from interface INST_INT
+2018/03/27 11:18:31.958  INFO: User disconnecting interface INST2_INT
+2018/03/27 11:18:31.958  INFO: Killing thread for interface INST2_INT
+2018/03/27 11:18:31.958  INFO: Clean disconnect from INST2_INT (returned nil)
+2018/03/27 11:18:31.958  INFO: Connection Lost for INST2_INT
+2018/03/27 11:18:31.958  INFO: Stopped packet reading for INST2_INT
+2018/03/27 11:18:31.969  INFO: Disconnected from interface INST2_INT
+2018/03/27 11:18:33.575  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:18:33.576  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:18:33.576  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:18:38.578  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:18:38.578  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:18:38.578  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:18:43.579  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:18:43.579  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:18:43.579  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:18:48.580  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:18:48.581  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:18:48.581  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:18:53.581  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:18:53.582  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:18:53.582  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:18:58.583  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:18:58.584  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:18:58.584  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:19:03.585  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:19:03.585  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:19:03.586  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:19:08.586  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:19:08.586  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:19:08.586  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:19:13.587  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:19:13.587  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:19:13.588  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:19:18.588  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:19:18.588  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:19:18.588  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:19:23.592  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:19:23.592  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:19:23.592  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:19:28.592  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:19:28.592  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:19:28.592  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:19:33.595  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:19:33.595  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:19:33.595  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:19:38.599  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:19:38.599  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:19:38.599  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:19:43.599  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:19:43.599  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:19:43.599  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:19:48.601  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:19:48.601  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:19:48.602  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:19:53.602  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:19:53.602  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:19:53.602  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:19:58.602  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:19:58.602  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:19:58.602  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:20:03.607  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:20:03.607  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:20:03.608  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:20:08.611  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:20:08.612  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:20:08.612  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:20:13.614  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:20:13.614  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:20:13.614  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:20:18.615  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:20:18.615  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:20:18.615  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:20:23.618  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:20:23.618  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:20:23.618  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:20:28.622  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:20:28.623  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:20:28.623  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:20:33.625  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:20:33.625  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:20:33.625  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:20:38.629  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:20:38.629  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:20:38.629  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:20:43.631  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:20:43.632  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:20:43.632  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:20:48.635  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:20:48.636  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:20:48.636  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:20:53.637  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:20:53.637  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:20:53.638  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:20:58.638  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:20:58.638  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:20:58.638  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:21:03.641  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:21:03.641  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:21:03.641  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:21:08.642  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:21:08.642  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:21:08.642  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:21:13.642  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:21:13.643  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:21:13.643  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:21:18.643  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:21:18.643  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:21:18.643  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:21:23.648  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:21:23.648  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:21:23.648  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:21:28.653  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:21:28.653  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:21:28.653  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:21:33.654  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:21:33.654  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:21:33.654  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:21:38.658  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:21:38.658  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:21:38.658  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:21:43.661  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:21:43.661  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:21:43.661  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:21:48.661  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:21:48.662  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:21:48.662  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:21:53.666  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:21:53.666  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:21:53.666  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:21:58.666  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:21:58.667  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:21:58.667  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:22:03.667  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:22:03.668  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:22:03.668  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:22:08.670  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:22:08.671  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:22:08.671  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:22:13.671  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:22:13.671  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:22:13.671  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:22:18.671  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:22:18.671  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:22:18.671  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:22:23.675  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:22:23.675  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:22:23.676  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:22:28.677  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:22:28.677  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:22:28.677  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:22:33.678  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:22:33.678  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:22:33.678  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:22:38.679  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:22:38.679  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:22:38.679  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:22:43.684  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:22:43.684  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:22:43.684  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:22:48.687  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:22:48.688  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:22:48.688  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:22:53.691  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:22:53.691  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:22:53.691  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:22:58.691  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:22:58.692  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:22:58.692  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:23:03.694  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:23:03.694  ERROR: PHOTON_INT Connection Failed: EADDRINUSE : Address already in use - bind(2) for "0.0.0.0" port 8888
+2018/03/27 11:23:03.694  ERROR: EADDRINUSE : Address already in use - bind(2) for "0.0.0.0" port 8888
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:192:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:88:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:88:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:23:08.696  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:23:08.696  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:23:08.696  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:23:13.701  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:23:13.701  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:23:13.701  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:23:18.704  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:23:18.704  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:23:18.704  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:23:23.707  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:23:23.708  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:23:23.708  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:23:28.710  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:23:28.711  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:23:28.711  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:23:33.713  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:23:33.713  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:23:33.713  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:23:38.714  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:23:38.714  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:23:38.714  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:23:43.714  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:23:43.715  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:23:43.715  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:23:48.720  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:23:48.720  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:23:48.720  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:23:53.722  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:23:53.722  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:23:53.722  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:23:58.723  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:23:58.723  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:23:58.723  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:24:03.727  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:24:03.727  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:24:03.728  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:24:08.730  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:24:08.730  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:24:08.730  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:24:13.730  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:24:13.730  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:24:13.730  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:24:18.732  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:24:18.732  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:24:18.732  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:24:23.736  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:24:23.736  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:24:23.736  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:24:28.736  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:24:28.736  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:24:28.736  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:24:33.739  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:24:33.739  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:24:33.739  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:24:38.741  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:24:38.742  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:24:38.742  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:24:43.746  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:24:43.746  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:24:43.746  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:24:48.750  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:24:48.750  ERROR: PHOTON_INT Connection Failed: EADDRINUSE : Address already in use - bind(2) for "0.0.0.0" port 8888
+2018/03/27 11:24:48.750  ERROR: EADDRINUSE : Address already in use - bind(2) for "0.0.0.0" port 8888
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:192:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:88:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:88:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:24:53.754  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:24:53.754  ERROR: PHOTON_INT Connection Failed: EADDRINUSE : Address already in use - bind(2) for "0.0.0.0" port 8888
+2018/03/27 11:24:53.754  ERROR: EADDRINUSE : Address already in use - bind(2) for "0.0.0.0" port 8888
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:192:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:88:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:88:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:24:58.755  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:24:58.755  ERROR: PHOTON_INT Connection Failed: EADDRINUSE : Address already in use - bind(2) for "0.0.0.0" port 8888
+2018/03/27 11:24:58.755  ERROR: EADDRINUSE : Address already in use - bind(2) for "0.0.0.0" port 8888
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:192:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:88:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:88:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:25:03.756  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:25:03.756  ERROR: PHOTON_INT Connection Failed: EADDRINUSE : Address already in use - bind(2) for "0.0.0.0" port 8888
+2018/03/27 11:25:03.756  ERROR: EADDRINUSE : Address already in use - bind(2) for "0.0.0.0" port 8888
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:192:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:88:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:88:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:25:08.761  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:25:08.761  ERROR: PHOTON_INT Connection Failed: EADDRINUSE : Address already in use - bind(2) for "0.0.0.0" port 8888
+2018/03/27 11:25:08.761  ERROR: EADDRINUSE : Address already in use - bind(2) for "0.0.0.0" port 8888
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:192:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:88:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:88:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:25:13.765  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:25:13.765  ERROR: PHOTON_INT Connection Failed: EADDRINUSE : Address already in use - bind(2) for "0.0.0.0" port 8888
+2018/03/27 11:25:13.765  ERROR: EADDRINUSE : Address already in use - bind(2) for "0.0.0.0" port 8888
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:192:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:88:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:88:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:25:18.769  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:25:18.769  ERROR: PHOTON_INT Connection Failed: EADDRINUSE : Address already in use - bind(2) for "0.0.0.0" port 8888
+2018/03/27 11:25:18.769  ERROR: EADDRINUSE : Address already in use - bind(2) for "0.0.0.0" port 8888
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:192:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:88:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:88:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:25:23.769  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:25:23.769  ERROR: PHOTON_INT Connection Failed: EADDRINUSE : Address already in use - bind(2) for "0.0.0.0" port 8888
+2018/03/27 11:25:23.769  ERROR: EADDRINUSE : Address already in use - bind(2) for "0.0.0.0" port 8888
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:192:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:88:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:88:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:25:28.774  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:25:28.774  ERROR: PHOTON_INT Connection Failed: EADDRINUSE : Address already in use - bind(2) for "0.0.0.0" port 8888
+2018/03/27 11:25:28.774  ERROR: EADDRINUSE : Address already in use - bind(2) for "0.0.0.0" port 8888
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:192:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:88:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:88:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:25:33.777  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:25:33.778  ERROR: PHOTON_INT Connection Failed: EADDRINUSE : Address already in use - bind(2) for "0.0.0.0" port 8888
+2018/03/27 11:25:33.778  ERROR: EADDRINUSE : Address already in use - bind(2) for "0.0.0.0" port 8888
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:192:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:88:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:88:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:25:38.794  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:25:38.794  ERROR: PHOTON_INT Connection Failed: EADDRINUSE : Address already in use - bind(2) for "0.0.0.0" port 8888
+2018/03/27 11:25:38.794  ERROR: EADDRINUSE : Address already in use - bind(2) for "0.0.0.0" port 8888
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:192:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:88:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:88:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:25:43.795  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:25:43.796  ERROR: PHOTON_INT Connection Failed: EADDRINUSE : Address already in use - bind(2) for "0.0.0.0" port 8888
+2018/03/27 11:25:43.796  ERROR: EADDRINUSE : Address already in use - bind(2) for "0.0.0.0" port 8888
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:192:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:88:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:88:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:25:48.799  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:25:48.800  ERROR: PHOTON_INT Connection Failed: EADDRINUSE : Address already in use - bind(2) for "0.0.0.0" port 8888
+2018/03/27 11:25:48.800  ERROR: EADDRINUSE : Address already in use - bind(2) for "0.0.0.0" port 8888
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:192:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:88:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:88:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:25:53.801  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:25:53.801  ERROR: PHOTON_INT Connection Failed: EADDRINUSE : Address already in use - bind(2) for "0.0.0.0" port 8888
+2018/03/27 11:25:53.801  ERROR: EADDRINUSE : Address already in use - bind(2) for "0.0.0.0" port 8888
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:192:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:88:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:88:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:25:58.802  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:25:58.802  ERROR: PHOTON_INT Connection Failed: EADDRINUSE : Address already in use - bind(2) for "0.0.0.0" port 8888
+2018/03/27 11:25:58.802  ERROR: EADDRINUSE : Address already in use - bind(2) for "0.0.0.0" port 8888
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:192:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:88:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:88:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:26:03.805  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:26:03.805  ERROR: PHOTON_INT Connection Failed: EADDRINUSE : Address already in use - bind(2) for "0.0.0.0" port 8888
+2018/03/27 11:26:03.805  ERROR: EADDRINUSE : Address already in use - bind(2) for "0.0.0.0" port 8888
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:192:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:88:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:88:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:26:08.808  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:26:08.808  ERROR: PHOTON_INT Connection Failed: EADDRINUSE : Address already in use - bind(2) for "0.0.0.0" port 8888
+2018/03/27 11:26:08.808  ERROR: EADDRINUSE : Address already in use - bind(2) for "0.0.0.0" port 8888
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:192:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:88:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:88:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:26:13.809  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:26:13.809  ERROR: PHOTON_INT Connection Failed: EADDRINUSE : Address already in use - bind(2) for "0.0.0.0" port 8888
+2018/03/27 11:26:13.809  ERROR: EADDRINUSE : Address already in use - bind(2) for "0.0.0.0" port 8888
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:192:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:88:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:88:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:26:18.772  INFO: User disconnecting interface PHOTON_INT
+2018/03/27 11:26:18.772  INFO: Killing thread for interface PHOTON_INT
+2018/03/27 11:26:18.772  INFO: Stopped packet reading for PHOTON_INT
+2018/03/27 11:26:18.783  INFO: Disconnected from interface PHOTON_INT
+2018/03/27 11:26:19.509  INFO: User connecting interface PHOTON_INT
+2018/03/27 11:26:19.509  INFO: Creating thread for interface PHOTON_INT
+2018/03/27 11:26:19.509  INFO: Starting packet reading for PHOTON_INT
+2018/03/27 11:26:19.509  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:26:19.510  ERROR: PHOTON_INT Connection Failed: EADDRINUSE : Address already in use - bind(2) for "0.0.0.0" port 8888
+2018/03/27 11:26:19.510  ERROR: EADDRINUSE : Address already in use - bind(2) for "0.0.0.0" port 8888
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:192:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:88:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:88:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:26:20.562  INFO: User disconnecting interface PHOTON_INT
+2018/03/27 11:26:20.562  INFO: Killing thread for interface PHOTON_INT
+2018/03/27 11:26:20.562  INFO: Stopped packet reading for PHOTON_INT
+2018/03/27 11:26:20.572  INFO: Disconnected from interface PHOTON_INT
+2018/03/27 11:26:23.107  INFO: User connecting interface PHOTON_INT
+2018/03/27 11:26:23.107  INFO: Creating thread for interface PHOTON_INT
+2018/03/27 11:26:23.107  INFO: Starting packet reading for PHOTON_INT
+2018/03/27 11:26:23.107  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:26:23.107  ERROR: PHOTON_INT Connection Failed: EADDRINUSE : Address already in use - bind(2) for "0.0.0.0" port 8888
+2018/03/27 11:26:23.108  ERROR: EADDRINUSE : Address already in use - bind(2) for "0.0.0.0" port 8888
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:192:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:88:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:88:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:26:28.111  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:26:28.112  ERROR: PHOTON_INT Connection Failed: EADDRINUSE : Address already in use - bind(2) for "0.0.0.0" port 8888
+2018/03/27 11:26:28.112  ERROR: EADDRINUSE : Address already in use - bind(2) for "0.0.0.0" port 8888
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:192:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:88:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:88:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:26:33.116  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:26:33.116  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:26:33.116  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:26:36.471  INFO: User disconnecting interface PHOTON_INT
+2018/03/27 11:26:36.472  INFO: Killing thread for interface PHOTON_INT
+2018/03/27 11:26:36.472  INFO: Stopped packet reading for PHOTON_INT
+2018/03/27 11:26:36.483  INFO: Disconnected from interface PHOTON_INT
+2018/03/27 11:26:39.035  INFO: User connecting interface PHOTON_INT
+2018/03/27 11:26:39.035  INFO: Creating thread for interface PHOTON_INT
+2018/03/27 11:26:39.035  INFO: Starting packet reading for PHOTON_INT
+2018/03/27 11:26:39.035  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:26:39.035  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:26:39.035  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:26:44.041  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:26:44.042  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:26:44.042  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:26:49.043  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:26:49.044  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:26:49.044  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:26:54.046  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:26:54.046  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:26:54.046  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:26:55.815  INFO: User disconnecting interface PHOTON_INT
+2018/03/27 11:26:55.815  INFO: Killing thread for interface PHOTON_INT
+2018/03/27 11:26:55.815  INFO: Stopped packet reading for PHOTON_INT
+2018/03/27 11:26:55.826  INFO: Disconnected from interface PHOTON_INT
+2018/03/27 11:29:16.192  INFO: User connecting interface PHOTON_INT
+2018/03/27 11:29:16.192  INFO: Creating thread for interface PHOTON_INT
+2018/03/27 11:29:16.194  INFO: Starting packet reading for PHOTON_INT
+2018/03/27 11:29:16.194  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:29:16.194  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:29:16.194  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:29:21.199  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:29:21.199  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:29:21.199  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:29:26.204  INFO: Connecting to PHOTON_INT...
+2018/03/27 11:29:26.204  ERROR: PHOTON_INT Connection Failed: SocketError : getaddrinfo: nodename nor servname provided, or not known
+2018/03/27 11:29:26.204  ERROR: SocketError : getaddrinfo: nodename nor servname provided, or not known
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `bind'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:46:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/io/udp_sockets.rb:167:in `initialize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `new'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/interfaces/udp_interface.rb:93:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:251:in `connect'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:71:in `block (2 levels) in start'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `synchronize'
+/Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/interface_thread.rb:69:in `block in start'
+2018/03/27 11:29:29.031  INFO: User disconnecting interface PHOTON_INT
+2018/03/27 11:29:29.031  INFO: Killing thread for interface PHOTON_INT
+2018/03/27 11:29:29.031  INFO: Stopped packet reading for PHOTON_INT
+2018/03/27 11:29:29.042  INFO: Disconnected from interface PHOTON_INT
+2018/03/27 11:29:39.046  INFO: Log File Closed : /Users/talagap/Dropbox/UIndy/Robots/WoodenRC/Cosmos/outputs/logs/2018_03_27_11_18_14_cmd.bin
+2018/03/27 11:29:39.048  INFO: Log File Closed : /Users/talagap/Dropbox/UIndy/Robots/WoodenRC/Cosmos/outputs/logs/2018_03_27_11_18_08_tlm.bin
+2018/03/27 11:29:39.048  INFO: Clean disconnect from SYSTEM_INT (returned nil)
+2018/03/27 11:29:39.048  INFO: Connection Lost for SYSTEM_INT
+2018/03/27 11:29:39.148  INFO: Killing thread for router INST_ROUTER
+2018/03/27 11:29:39.148  INFO: Clean disconnect from INST_ROUTER (returned nil)
+2018/03/27 11:29:39.148  INFO: Connection Lost for INST_ROUTER
+2018/03/27 11:29:39.193  INFO: Stopped packet reading for INST_ROUTER
+2018/03/27 11:29:39.202  INFO: Disconnected from router INST_ROUTER
+2018/03/27 11:29:39.202  INFO: Killing thread for router PREIDENTIFIED_ROUTER
+2018/03/27 11:29:39.202  INFO: Clean disconnect from PREIDENTIFIED_ROUTER (returned nil)
+2018/03/27 11:29:39.202  INFO: Connection Lost for PREIDENTIFIED_ROUTER
+2018/03/27 11:29:39.290  INFO: Stopped packet reading for PREIDENTIFIED_ROUTER
+2018/03/27 11:29:39.297  INFO: Disconnected from router PREIDENTIFIED_ROUTER
+2018/03/27 11:29:39.297  INFO: Killing thread for router PREIDENTIFIED_CMD_ROUTER
+2018/03/27 11:29:39.297  INFO: Stopped packet reading for PREIDENTIFIED_CMD_ROUTER
+2018/03/27 11:29:39.390  INFO: Disconnected from router PREIDENTIFIED_CMD_ROUTER
+2018/03/27 11:29:39.412  INFO: Disconnected from interface INST_INT
+2018/03/27 11:29:39.412  INFO: Disconnected from interface INST2_INT
+2018/03/27 11:29:39.412  INFO: Disconnected from interface PHOTON_INT
+2018/03/27 11:29:39.412  INFO: Killing thread for interface SYSTEM_INT
+2018/03/27 11:29:39.412  INFO: Stopped packet reading for SYSTEM_INT
+2018/03/27 11:29:39.422  INFO: Disconnected from interface SYSTEM_INT
+2018/03/27 11:29:39.422  INFO: Disconnected from interface EXAMPLE_INT
+2018/03/27 11:29:39.422  INFO: Disconnected from interface TEMPLATED_INT

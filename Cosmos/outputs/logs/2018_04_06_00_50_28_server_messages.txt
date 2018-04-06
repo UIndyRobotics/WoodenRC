@@ -1,0 +1,124 @@
+2018/04/06 00:50:27.608  INFO: COSMOS Version: 4.1.1
+2018/04/06 00:50:27.612  INFO: Processing target definition in file '/Users/talagap/Dropbox/UIndy/Robots/WoodenRC/Cosmos/config/targets/INST/target.txt'
+2018/04/06 00:50:27.616  INFO: Processing target definition in file '/Users/talagap/Dropbox/UIndy/Robots/WoodenRC/Cosmos/config/targets/INST/target.txt'
+2018/04/06 00:50:27.668  INFO: Processing target definition in file '/Users/talagap/Dropbox/UIndy/Robots/WoodenRC/Cosmos/config/targets/EXAMPLE/target.txt'
+2018/04/06 00:50:27.669  INFO: Processing target definition in file '/Users/talagap/Dropbox/UIndy/Robots/WoodenRC/Cosmos/config/targets/TEMPLATED/target.txt'
+2018/04/06 00:50:27.671  INFO: Processing target definition in file '/Users/talagap/Dropbox/UIndy/Robots/WoodenRC/Cosmos/config/targets/SYSTEM/target.txt'
+2018/04/06 00:50:27.673  INFO: Processing CmdTlmServer configuration in file: /Users/talagap/Dropbox/UIndy/Robots/WoodenRC/Cosmos/config/tools/cmd_tlm_server/cmd_tlm_server.txt
+2018/04/06 00:50:27.674  INFO: Processing CmdTlmServer configuration in file: /Users/talagap/Dropbox/UIndy/Robots/WoodenRC/Cosmos/config/targets/INST/cmd_tlm_server.txt
+2018/04/06 00:50:27.675  INFO: Processing CmdTlmServer configuration in file: /Users/talagap/Dropbox/UIndy/Robots/WoodenRC/Cosmos/config/targets/INST/cmd_tlm_server2.txt
+2018/04/06 00:50:27.676  INFO: Processing CmdTlmServer configuration in file: /Users/talagap/Dropbox/UIndy/Robots/WoodenRC/Cosmos/config/targets/EXAMPLE/cmd_tlm_server.txt
+2018/04/06 00:50:27.676  INFO: Processing CmdTlmServer configuration in file: /Users/talagap/Dropbox/UIndy/Robots/WoodenRC/Cosmos/config/targets/TEMPLATED/cmd_tlm_server.txt
+2018/04/06 00:50:27.687  INFO: Marshal file does not exist: /Users/talagap/Dropbox/UIndy/Robots/WoodenRC/Cosmos/outputs/tmp/marshal_395ba799bf1173c4ffe3d9a342f96258.bin
+2018/04/06 00:50:28.069  INFO: Creating thread for router INST_ROUTER
+2018/04/06 00:50:28.069  INFO: Creating thread for router PREIDENTIFIED_ROUTER
+2018/04/06 00:50:28.069  INFO: Creating thread for router PREIDENTIFIED_CMD_ROUTER
+2018/04/06 00:50:28.069  INFO: Creating thread for interface INST_INT
+2018/04/06 00:50:28.069  INFO: Creating thread for interface INST2_INT
+2018/04/06 00:50:28.069  INFO: Creating thread for interface PHOTON_INT
+2018/04/06 00:50:28.070  INFO: Creating thread for interface SYSTEM_INT
+2018/04/06 00:50:28.070  INFO: Starting packet reading for INST_ROUTER
+2018/04/06 00:50:28.070  INFO: Connecting to INST_ROUTER...
+2018/04/06 00:50:28.071  INFO: INST_ROUTER Connection Success
+2018/04/06 00:50:28.071  INFO: Starting packet reading for PREIDENTIFIED_ROUTER
+2018/04/06 00:50:28.071  INFO: Connecting to PREIDENTIFIED_ROUTER...
+2018/04/06 00:50:28.071  INFO: PREIDENTIFIED_ROUTER Connection Success
+2018/04/06 00:50:28.071  INFO: Starting connection maintenance for PREIDENTIFIED_CMD_ROUTER
+2018/04/06 00:50:28.071  INFO: Connecting to PREIDENTIFIED_CMD_ROUTER...
+2018/04/06 00:50:28.087  INFO: Starting packet reading for INST_INT
+2018/04/06 00:50:28.087  INFO: Connecting to INST_INT...
+2018/04/06 00:50:28.088  INFO: Starting packet reading for INST2_INT
+2018/04/06 00:50:28.088  INFO: Connecting to INST2_INT...
+2018/04/06 00:50:28.088  INFO: Starting packet reading for PHOTON_INT
+2018/04/06 00:50:28.088  INFO: Connecting to PHOTON_INT...
+2018/04/06 00:50:28.088  INFO: Starting packet reading for SYSTEM_INT
+2018/04/06 00:50:28.089  INFO: Connecting to SYSTEM_INT...
+2018/04/06 00:50:28.089  INFO: SYSTEM_INT Connection Success
+2018/04/06 00:50:28.177  INFO: PREIDENTIFIED_CMD_ROUTER Connection Success
+2018/04/06 00:50:28.177  INFO: INST2_INT Connection Success
+2018/04/06 00:50:28.178  INFO: INST2 HEALTH_STATUS TEMP1 = 54.888149999999996 is GREEN_HIGH
+2018/04/06 00:50:28.178  ERROR: INST2 HEALTH_STATUS TEMP2 = -Infinity is RED_LOW
+2018/04/06 00:50:28.178  ERROR: INST2 HEALTH_STATUS TEMP3 = 79.94390000000001 is RED_HIGH
+2018/04/06 00:50:28.178  INFO: INST2 HEALTH_STATUS TEMP4 = -0.057599999999993656 is GREEN
+2018/04/06 00:50:28.179  INFO: INST_INT Connection Success
+2018/04/06 00:50:28.207  INFO: PHOTON_INT Connection Success
+2018/04/06 00:50:28.207  INFO: Log File Opened : /Users/talagap/Dropbox/UIndy/Robots/WoodenRC/Cosmos/outputs/logs/2018_04_06_00_50_28_tlm.bin
+2018/04/06 00:50:28.208  INFO: INST HEALTH_STATUS TEMP1 = 54.888149999999996 is GREEN_HIGH
+2018/04/06 00:50:28.208  ERROR: INST HEALTH_STATUS TEMP2 = -Infinity is RED_LOW
+2018/04/06 00:50:28.208  ERROR: INST HEALTH_STATUS TEMP3 = 79.94390000000001 is RED_HIGH
+2018/04/06 00:50:28.208  INFO: INST HEALTH_STATUS TEMP4 = -0.057599999999993656 is GREEN
+2018/04/06 00:50:29.099  INFO: INST HEALTH_STATUS TEMP2 = -22.164702929687493 is GREEN
+2018/04/06 00:50:29.100  INFO: INST2 HEALTH_STATUS TEMP2 = -22.164702929687493 is GREEN
+2018/04/06 00:50:29.688  INFO: User disconnecting interface INST_INT
+2018/04/06 00:50:29.688  INFO: Killing thread for interface INST_INT
+2018/04/06 00:50:29.688  INFO: Clean disconnect from INST_INT (returned nil)
+2018/04/06 00:50:29.688  INFO: Connection Lost for INST_INT
+2018/04/06 00:50:29.688  INFO: Stopped packet reading for INST_INT
+2018/04/06 00:50:29.698  INFO: Disconnected from interface INST_INT
+2018/04/06 00:50:30.099  WARN: INST2 HEALTH_STATUS TEMP1 = 64.77625 is YELLOW_HIGH
+2018/04/06 00:50:30.273  INFO: User disconnecting interface INST2_INT
+2018/04/06 00:50:30.273  INFO: Killing thread for interface INST2_INT
+2018/04/06 00:50:30.278  INFO: Clean disconnect from INST2_INT (returned nil)
+2018/04/06 00:50:30.278  INFO: Connection Lost for INST2_INT
+2018/04/06 00:50:30.278  INFO: Stopped packet reading for INST2_INT
+2018/04/06 00:50:30.284  INFO: Disconnected from interface INST2_INT
+2018/04/06 00:50:33.091  INFO: Enabling Limits Group: INST2_TEMP2
+2018/04/06 00:50:33.091  INFO: Enabling Limits Group: INST2_GROUND
+2018/04/06 00:50:52.259  ERROR: PHOTON DATA received with actual packet length of 248 but defined length of 124
+2018/04/06 00:51:09.702  ERROR: PHOTON DATA received with actual packet length of 248 but defined length of 124
+2018/04/06 00:51:30.294  ERROR: PHOTON DATA received with actual packet length of 248 but defined length of 124
+2018/04/06 00:51:30.688  INFO: Log File Closed : /Users/talagap/Dropbox/UIndy/Robots/WoodenRC/Cosmos/outputs/logs/2018_04_06_00_50_28_tlm.bin
+2018/04/06 00:51:30.689  INFO: Clean disconnect from SYSTEM_INT (returned nil)
+2018/04/06 00:51:30.689  INFO: Connection Lost for SYSTEM_INT
+2018/04/06 00:51:30.790  INFO: Killing thread for router INST_ROUTER
+2018/04/06 00:51:30.790  INFO: Clean disconnect from INST_ROUTER (returned nil)
+2018/04/06 00:51:30.790  INFO: Connection Lost for INST_ROUTER
+2018/04/06 00:51:30.891  INFO: Stopped packet reading for INST_ROUTER
+2018/04/06 00:51:30.897  INFO: Disconnected from router INST_ROUTER
+2018/04/06 00:51:30.897  INFO: Killing thread for router PREIDENTIFIED_ROUTER
+2018/04/06 00:51:30.897  INFO: Clean disconnect from PREIDENTIFIED_ROUTER (returned nil)
+2018/04/06 00:51:30.897  INFO: Connection Lost for PREIDENTIFIED_ROUTER
+2018/04/06 00:51:30.990  INFO: Stopped packet reading for PREIDENTIFIED_ROUTER
+2018/04/06 00:51:30.994  INFO: Disconnected from router PREIDENTIFIED_ROUTER
+2018/04/06 00:51:30.994  INFO: Killing thread for router PREIDENTIFIED_CMD_ROUTER
+2018/04/06 00:51:30.994  INFO: Stopped packet reading for PREIDENTIFIED_CMD_ROUTER
+2018/04/06 00:51:31.096  INFO: Disconnected from router PREIDENTIFIED_CMD_ROUTER
+2018/04/06 00:51:31.117  INFO: Disconnected from interface INST_INT
+2018/04/06 00:51:31.117  INFO: Disconnected from interface INST2_INT
+2018/04/06 00:51:31.117  INFO: Killing thread for interface PHOTON_INT
+2018/04/06 00:51:31.118  INFO: Clean disconnect from PHOTON_INT (returned nil)
+2018/04/06 00:51:31.118  INFO: Connection Lost for PHOTON_INT
+2018/04/06 00:51:31.118  INFO: Stopped packet reading for PHOTON_INT
+2018/04/06 00:51:31.128  INFO: Disconnected from interface PHOTON_INT
+2018/04/06 00:51:31.128  INFO: Killing thread for interface SYSTEM_INT
+2018/04/06 00:51:31.129  INFO: Stopped packet reading for SYSTEM_INT
+2018/04/06 00:51:31.140  INFO: Disconnected from interface SYSTEM_INT
+2018/04/06 00:51:31.140  INFO: Disconnected from interface EXAMPLE_INT
+2018/04/06 00:51:31.140  INFO: Disconnected from interface TEMPLATED_INT
+2018/04/06 00:51:32.169  WARN: Failed to gracefully kill thread:
+  Caller Backtrace:
+  /Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/cmd_tlm_server_gui.rb:473:in `block in stop_callback'
+  /Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/qtbindings-4.8.6.4/lib/Qt4.rb:114:in `execute_in_main_thread'
+  /Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/cmd_tlm_server_gui.rb:469:in `stop_callback'
+  /Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/cmd_tlm_server.rb:266:in `call'
+  /Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/cmd_tlm_server.rb:266:in `stop'
+  /Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/cmd_tlm_server_gui.rb:389:in `stop_threads'
+  /Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/cmd_tlm_server_gui.rb:415:in `closeEvent'
+  /Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/qtbindings-4.8.6.4/lib/Qt/qtruby4.rb:479:in `method_missing'
+  /Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/qtbindings-4.8.6.4/lib/Qt/qtruby4.rb:479:in `exec'
+  /Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/gui/qt_tool.rb:297:in `block in run'
+  /Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/top_level.rb:716:in `set_working_dir'
+  /Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/gui/qt_tool.rb:278:in `run'
+  /Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/cmd_tlm_server_gui.rb:641:in `block in run'
+  /Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/top_level.rb:531:in `catch_fatal_exception'
+  /Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/cmd_tlm_server_gui.rb:607:in `run'
+  /Users/talagap/Dropbox/UIndy/Robots/WoodenRC/Cosmos/tools/mac/CmdTlmServer.app/Contents/MacOS/CmdTlmServer.rb:15:in `block in <main>'
+  /Users/talagap/Dropbox/UIndy/Robots/WoodenRC/Cosmos/tools/mac/CmdTlmServer.app/Contents/MacOS/tool_launch.rb:16:in `tool_launch'
+  /Users/talagap/Dropbox/UIndy/Robots/WoodenRC/Cosmos/tools/mac/CmdTlmServer.app/Contents/MacOS/CmdTlmServer.rb:13:in `<main>'
+  
+  Thread Backtrace:
+  /Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/qtbindings-4.8.6.4/lib/Qt4.rb:107:in `sleep'
+  /Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/qtbindings-4.8.6.4/lib/Qt4.rb:107:in `execute_in_main_thread'
+  /Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/cmd_tlm_server_gui.rb:447:in `handle_string_output'
+  /Users/talagap/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/cosmos-4.1.1/lib/cosmos/tools/cmd_tlm_server/cmd_tlm_server_gui.rb:432:in `block in process_server_messages'
+

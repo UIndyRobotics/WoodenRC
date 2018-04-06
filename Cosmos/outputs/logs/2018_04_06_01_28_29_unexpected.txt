@@ -1,0 +1,3 @@
+Unexpected Output:
+
+LSOpenURLsWithRole() failed with error -10810 for the file /Users/talagap/Dropbox/UIndy/Robots/WoodenRC/Cosmos/tools/mac/ConfigEditor.app.
