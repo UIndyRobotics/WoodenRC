@@ -43,22 +43,25 @@ UDPSock.bind(udp_addr)
 con_list = []
 
 tcp_thread = TCPThread(con_list)
+tcp_thread.daemon = True
 tcp_thread.start()
 
 print("Waiting to receive message...")
 while True:
     (data, addr) = UDPSock.recvfrom(buf)
     (counter) = unpack('i', data[0:4]) # pull the first integer off
-    print("Got UDP len: %d id: %d listeners: %d" % ( len(data), counter[0], len(con_list)))
+#    print("Got UDP len: %d id: %d listeners: %d" % ( len(data), counter[0], len(con_list)))
+    #print "%d" % (counter[0])
     # Loop through all the connections and send to each client
     # TODO: This may cause a slowdown, investigate, and possibly multithread.
     for c in con_list:
       # If connection is invalid, (they disconnected, remove from the list)
       try:
         c.send(data)
-      except:
+      except socket.error as e:
+        print "Removing TCP client"
         con_list.remove(c)
         
-    
+
 tcp_thread.join()
 
