@@ -31,7 +31,7 @@
     char subnet_mask[16];
     byte access_point_BSSID[6];
     char ssid[20];
-
+    char terminator[4];
 };
 
   See udp-wifi-streamer.ino for the Photon code.
@@ -40,7 +40,7 @@
 host = "18.217.55.123"  # IP address of Talaga's EC2 repeater
 port = 49154
 
-struct_format = 'IiiiIifffff6s16s16s16s6s20s'
+struct_format = 'IiiiIifffff6s16s16s16s6s20s4s'
 throttle = -1
 steer = -1
 
@@ -63,13 +63,14 @@ packets_so_far = 0
 
 while True:
     data = data + TCPSock.recv(buf)
+    # TODO: Look for DEADBEEF at the end of the packet
     if len(data) < calcsize(struct_format):
       continue
     if len(data) > calcsize(struct_format):
       data = data[-calcsize(struct_format):]
     #print(len(data), calcsize(struct_format))
     #(device_mac, local_ip, gateway_ip, subnet_mask, sig_strength, bssid, ssid, counter, throttle, steer) = unpack("6s16s16s16si6s20siii", data)
-    (counter, throttle, throttle_out, steer, ir_changes, sig_strength, ax, ay, az, battery_voltage_in, battery_current_in,device_mac, local_ip, gateway_ip, subnet_mask, bssid, ssid) = unpack(struct_format, data)
+    (counter, throttle, throttle_out, steer, ir_changes, sig_strength, ax, ay, az, battery_voltage_in, battery_current_in,device_mac, local_ip, gateway_ip, subnet_mask, bssid, ssid, terminator) = unpack(struct_format, data)
 
     # Attemp to print how many lost packets we've seen
     if start_counter == -1:
