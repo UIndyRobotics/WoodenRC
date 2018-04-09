@@ -50,7 +50,10 @@ def getMAS(mac):
   return "%x:%x:%x:%x:%x:%x" % unpack("BBBBBB",mac)
 
 host = ""
-lapTime = 60
+ir_last = 0
+lapTime = 0
+lapCount = 0
+lapTimes = []
 buf = 1024
 addr = (host, port)
 UDPSock = socket(AF_INET, SOCK_DGRAM)
@@ -62,15 +65,23 @@ while True:
     #print(len(data), calcsize(struct_format))
     #(counter, throttle, throttle_out, steer, ir_changes, sig_strength, ax, ay, az, battery_voltage_in, battery_current_in,device_mac, local_ip, gateway_ip, subnet_mask, bssid, ssid) = unpack(struct_format, data)
     #print("IR_changes: ", ir_changes)
-    if(ir_changes > 0 & seconds == 0):
+    if((ir_changes > 0.0) & (seconds == 0.0)):
       ir_last = ir_changes
       now = datetime.datetime.now()
       seconds = now.hour * 3600 + (now.minute * 60) + now.second + now.microsecond/1000000
       start_time = seconds
-    if(seconds not = 0):
+    if(seconds != 0.0):
       now = datetime.datetime.now()
       seconds = now.hour * 3600 + (now.minute * 60) + now.second + now.microsecond/1000000
-    if(ir_changes > ir_last & seconds > (seconds+lapTime))
+    if((ir_changes > ir_last) & (seconds > (seconds+lapTime))):
+      print("Incrementing")
+      lapCount = lapCount + 1
+      lapTimes.append(seconds)
+    if(lapCount >= 3):
+      print(lapTimes)
+    ir_changes = input()
+    ir_changes = float(ir_changes)
+
     
 
     
