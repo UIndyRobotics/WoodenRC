@@ -48,8 +48,8 @@ start_play_time = -1
 mode = 0
 playback_i = 0
 # 0 = no
-# 1 = recording - 'record' - clears old data
-# 2 = playback  - 'play'
+# 1 = recording - 'r' - clears old data
+# 2 = playback  - 'p'
 
 buf = 1024
 udp_addr = (host, UDP_port)
@@ -103,13 +103,13 @@ while True:
           con_list.remove(c)
         else:
           c.send(data)
-          if 'record' in user_input:
+          if 'r' in user_input:
             print("Recording")
             packet_capture = []
             packet_capture.append( (0 , data) ) # tuples of (time from start of capture, data)
             start_play_time = currentMilliTime()
             mode = 1
-          elif 'play' in user_input:
+          elif 'p' in user_input:
             print("Playback")
             mode = 2
             playback_i = 0
