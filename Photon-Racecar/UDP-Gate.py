@@ -51,7 +51,7 @@ def getMAS(mac):
 
 host = ""
 ir_last = 0
-lapTime = 0
+lapTime = 2
 lapCount = 0
 lapTimes = []
 buf = 1024
@@ -60,27 +60,36 @@ UDPSock = socket(AF_INET, SOCK_DGRAM)
 UDPSock.bind(addr)
 print("Waiting to receive message...")
 ir_changes = 0
+start_time = 0
+numLaps = 4
 while True:
+  try:
     #(data, addr) = UDPSock.recvfrom(buf)
     #print(len(data), calcsize(struct_format))
     #(counter, throttle, throttle_out, steer, ir_changes, sig_strength, ax, ay, az, battery_voltage_in, battery_current_in,device_mac, local_ip, gateway_ip, subnet_mask, bssid, ssid) = unpack(struct_format, data)
     #print("IR_changes: ", ir_changes)
     if((ir_changes > 0.0) & (seconds == 0.0)):
       ir_last = ir_changes
+      print("Starting")
       now = datetime.datetime.now()
       seconds = now.hour * 3600 + (now.minute * 60) + now.second + now.microsecond/1000000
       start_time = seconds
-    if(seconds != 0.0):
+      lapCount = 1
+      lapTimes.append(seconds)
+    if(seconds > 0.0):
       now = datetime.datetime.now()
       seconds = now.hour * 3600 + (now.minute * 60) + now.second + now.microsecond/1000000
-    if((ir_changes > ir_last) & (seconds > (seconds+lapTime))):
+    if((ir_changes > ir_last) & (seconds > (start_time+lapTime))):
       print("Incrementing")
       lapCount = lapCount + 1
       lapTimes.append(seconds)
-    if(lapCount >= 3):
+      ir_last = ir_changes
+    if(lapCount == (numLaps)):
       print(lapTimes)
-    ir_changes = input()
-    ir_changes = float(ir_changes)
+      break
+  except KeyboardInterrupt:
+    ir_changes = ir_changes + 1
+    
 
     
 
