@@ -1,11 +1,8 @@
 '''
-  TCP-Network-Photon.py
-  Paul Talaga
-  April 6, 2018
-  Connects via TCP to a a UDP repeater (UDP-Repeater) running in the cloud, which
-  streams information sent to it via UDP.
-
-  Unpackes a struct created on a
+  UDP-Network-Photon.py
+  Clayton Winders
+  March 29, 2018
+  Prints UDP packets send to this machine and port.  Unpackes a struct created on a
   Particle Photon with the following:
 
   struct network_info_t{
@@ -36,10 +33,9 @@
 
   See udp-wifi-streamer.ino for the Photon code.
 '''
-
 host = "18.217.55.123"  # IP address of Talaga's EC2 repeater
 port = 49154
-
+addr = (host, port)
 struct_format = 'IiiiIifffff6s16s16s16s6s20s4s'
 throttle = -1
 steer = -1
@@ -47,48 +43,67 @@ steer = -1
 import os
 from socket import *
 from struct import *
+import datetime, time
 
+seconds = 0
 def getMAS(mac):
   return "%x:%x:%x:%x:%x:%x" % unpack("BBBBBB",mac)
 
-
+ir_last = 0
+lapTime = 2.0*1000
+lapCount = 0
+lapTimes = []
 buf = 1024
-addr = (host, port)
 TCPSock = socket(AF_INET, SOCK_STREAM)
 TCPSock.connect(addr)
 print("Waiting to receive message...")
+ir_changes = 0
+start_time = 0
+numLaps = 4
 data = ""
-start_counter = -1
-packets_so_far = 0
-
+total = 0
+currentMilliTime = lambda: int(round(time.time() * 1000))
 while True:
     data = data + TCPSock.recv(buf)
-    # TODO: Look for DEADBEEF at the end of the packet
     if len(data) < calcsize(struct_format):
       continue
     if len(data) > calcsize(struct_format):
       data = data[-calcsize(struct_format):]
     #print(len(data), calcsize(struct_format))
-    #(device_mac, local_ip, gateway_ip, subnet_mask, sig_strength, bssid, ssid, counter, throttle, steer) = unpack("6s16s16s16si6s20siii", data)
     (counter, throttle, throttle_out, steer, ir_changes, sig_strength, ax, ay, az, battery_voltage_in, battery_current_in,device_mac, local_ip, gateway_ip, subnet_mask, bssid, ssid, terminator) = unpack(struct_format, data)
+    #print("IR_changes: ", ir_changes)
+    
+    if((ir_changes > 0.0) and (lapCount == 0)):
+      ir_last = ir_changes
+      start_time = currentMilliTime()
+      print("Starting", currentMilliTime(), ir_changes)
+      lapCount = 1
+      lapTimes.append(currentMilliTime())
+    if((ir_changes > ir_last) and (currentMilliTime() > (lapTimes[-1]+lapTime))):
+      lapCount = lapCount + 1
+      lapTimes.append(currentMilliTime())
+      ir_last = ir_changes
+      print("Incrementing", currentMilliTime(), ir_changes )
+    if(lapCount == (numLaps)):
+      laps = 0
+      for lap in lapTimes:
+        if laps == 0:
+          print(0)
+          old = lap
+          laps = laps + 1
+        else:
+          this = (lap-old)/1000.0
+          print(this)
+          old = lap
+          total = total + this
+      print(total)
+      break
 
-    # Attemp to print how many lost packets we've seen
-    if start_counter == -1:
-      start_counter = counter
-    packets_so_far += 1
     
 
-    print("\n   Missed Packets: %d" % (packets_so_far - (counter - start_counter)))
-    print("local: %s\ngateway: %s\nmask: %s\nstrength: %i\nssid: %s\ncounter: %i\nmac: %s\nbssid: %s\nthrottle: %s\nthrottle_out: %s\nsteer: %s" % (local_ip, gateway_ip, subnet_mask, sig_strength, ssid, counter, getMAS(device_mac), getMAS(bssid), throttle, throttle_out, steer))
-    print("ax: ", ax)
-    print("ay: ", ay)
-    print("az: ", az)
-    print("Battery Voltage: ", battery_voltage_in)
-    print("Battery Current: ", battery_current_in)
-    print("IR_changes: ", ir_changes)
-    #print unpacked
-    #print("Received message (" + str(len(data)) + "): " + data)
+    
 
+    
 
 '''
 
