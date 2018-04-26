@@ -20,8 +20,10 @@
             system.
 */
 
-#define VCONVERT 4.37
-#define ACONVERT 62.5
+#define VCONVERT 488
+#define ACONVERTM 0.0074
+#define ACONVERTB -5.277
+#define SMOOTH_LEN 5
 // Send UDP packets to this IP & Port
 //IPAddress remoteIP(192, 168, 1, 166);
 //IPAddress remoteIP(34,198,243,87);
@@ -80,13 +82,16 @@ struct network_info_t{
   char subnet_mask[16];
   byte access_point_BSSID[6];
   char ssid[20];
-
+  char terminator[4];
 };
 
 Servo myservos[2] = {};
 UDP Udp;
 int counter;
 network_info_t network;
+
+unsigned current_smoother[SMOOTH_LEN] = {}; // to smooth the current 
+unsigned voltage_smoother[SMOOTH_LEN] = {}; // to smooth the current
 
 // IR trigger
 volatile unsigned ir_changes;
@@ -120,6 +125,12 @@ void setup() {
     ir_changes = 0;
     pinMode(IR_detect_in, INPUT_PULLUP);
     attachInterrupt(IR_detect_in, ir_trigger, FALLING);
+    
+    // set the termination string at the end of the struct
+    network.terminator[0] = 0xDE;
+    network.terminator[1] = 0xAD;
+    network.terminator[2] = 0xBE;
+    network.terminator[3] = 0xEF;
 }
 
 void loop(){
@@ -143,8 +154,25 @@ void loop(){
     network.counter = counter;
 
     // Battery info
-    network.battery_voltage_in = analogRead(battery_voltage_in) * (float)3.3 * VCONVERT / 4095;
-    network.battery_current_in = analogRead(battery_current_in) / (float)ACONVERT;
+    // do voltage smoothing
+    voltage_smoother[counter % SMOOTH_LEN] = analogRead(battery_voltage_in);
+    unsigned i = 0;
+    float v_temp = 0.0;
+    //network.battery_voltage_in = analogRead(battery_voltage_in) * (float)3.3 * VCONVERT / 4095;
+    for(i = 0; i < SMOOTH_LEN; i++){
+        v_temp += voltage_smoother[i];
+    }
+    network.battery_voltage_in = v_temp / SMOOTH_LEN / VCONVERT;
+    
+    // do current smoothing
+    current_smoother[counter % SMOOTH_LEN] = analogRead(battery_current_in);
+    //network.battery_current_in = analogRead(battery_current_in) / (float)ACONVERT;
+    float a_temp = 0.0;
+    
+    for(i = 0; i < SMOOTH_LEN; i++){
+        a_temp += current_smoother[i];
+    }
+    network.battery_current_in = (a_temp / SMOOTH_LEN ) * ACONVERTM + ACONVERTB;
     
     // Read and write servos
     // TODO Investigate if pulseIn is the best here
