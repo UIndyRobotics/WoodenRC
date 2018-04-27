@@ -40,7 +40,7 @@
 host = "18.217.55.123"  # IP address of Talaga's EC2 repeater
 port = 49154
 
-struct_format = 'IiiiIifffff6s16s16s16s6s20s4s'
+struct_format = 'IiiiIiffffff6s16s16s16s6s20s4s'
 throttle = -1
 steer = -1
 
@@ -70,7 +70,7 @@ while True:
       data = data[-calcsize(struct_format):]
     #print(len(data), calcsize(struct_format))
     #(device_mac, local_ip, gateway_ip, subnet_mask, sig_strength, bssid, ssid, counter, throttle, steer) = unpack("6s16s16s16si6s20siii", data)
-    (counter, throttle, throttle_out, steer, ir_changes, sig_strength, ax, ay, az, battery_voltage_in, battery_current_in,device_mac, local_ip, gateway_ip, subnet_mask, bssid, ssid, terminator) = unpack(struct_format, data)
+    (counter, throttle, throttle_out, steer, ir_changes, sig_strength, ax, ay, az, battery_voltage_in, battery_current_in,battery_current_sum,device_mac, local_ip, gateway_ip, subnet_mask, bssid, ssid, terminator) = unpack(struct_format, data)
 
     # Attemp to print how many lost packets we've seen
     if start_counter == -1:
@@ -85,6 +85,7 @@ while True:
     print("az: ", az)
     print("Battery Voltage: ", battery_voltage_in)
     print("Battery Current: ", battery_current_in)
+    print("Battery Currentsum:", battery_current_sum)
     print("IR_changes: ", ir_changes)
     #print unpacked
     #print("Received message (" + str(len(data)) + "): " + data)
