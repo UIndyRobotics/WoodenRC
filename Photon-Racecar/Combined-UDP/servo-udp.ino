@@ -18,11 +18,12 @@
             is producing with an inline sensor.
         Motor - Get the steering and motor control as a pass through
             system.
+            
 */
 
 #define VCONVERT 488
 #define ACONVERTM 0.0074
-#define ACONVERTB -5.277
+#define ACONVERTB -5.00
 #define SMOOTH_LEN 5
 // Send UDP packets to this IP & Port
 //IPAddress remoteIP(192, 168, 1, 166);
@@ -75,6 +76,7 @@ struct network_info_t{
   float az;
   float battery_voltage_in;
   float battery_current_in;
+  float battery_current_sum;
   // Wifi parameters
   byte device_mac[6];
   char local_ip[16];
@@ -92,6 +94,8 @@ network_info_t network;
 
 unsigned current_smoother[SMOOTH_LEN] = {}; // to smooth the current 
 unsigned voltage_smoother[SMOOTH_LEN] = {}; // to smooth the current
+float amp_sum = 0;
+long last_millis = 0;
 
 // IR trigger
 volatile unsigned ir_changes;
@@ -114,6 +118,7 @@ void setup() {
     pinMode(throttle_in, INPUT);
 
     counter = 0;
+    last_millis = millis();
 
     myservos[0].attach(steer_out);
     myservos[1].attach(throttle_out);
@@ -173,6 +178,9 @@ void loop(){
         a_temp += current_smoother[i];
     }
     network.battery_current_in = (a_temp / SMOOTH_LEN ) * ACONVERTM + ACONVERTB;
+    // Coulum count in units of mAh
+    network.battery_current_sum += network.battery_current_in * (millis() - last_millis) / 60 / 60;
+    last_millis = millis();
     
     // Read and write servos
     // TODO Investigate if pulseIn is the best here
@@ -206,7 +214,7 @@ void loop(){
     }
 
     // TODO: remove this delay and put into a much larger loop with timings
-    delay(20);
+    delay(5);
 }
 
 int ch_throttle(String val){

@@ -1,0 +1,18 @@
+
+
+NiMH battery curve - http://www.stefanv.com/electronics/using_nimh/nimh_vs_alkaline.gif
+Max voltage: 1.25v per cell, so 7.5.  We are seeing topped off of 1.28 or 7.7v
+Min voltage: 1v per cell, so 6v in our case
+    
+Charging: https://www.powerstream.com/NiMH.htm
+        Trickle Charging - C/30 to C/20 - so 0.09A
+        Safe/cheapest - Charge at C/10 - No end-of-charge sensor.  Not past 13hrs.
+            1800 mAh is 0.18A
+                Note the wall changer charges at 0.2
+        Faster - C/3.3 for 5 hours if fully depleated. Must sense dV or dT.  0.54A
+        If temp sensor, can do C/1 for 1.5 hours. 1.8A
+        
+        Specific charger charges at 1.2A, but likely senses the cuttoff. C/1.5
+        
+        Memory can be an issue.  Best to fully take it down, then charge.
+    
