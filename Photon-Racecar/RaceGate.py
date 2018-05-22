@@ -5,33 +5,10 @@
   Prints UDP packets send to this machine and port.  Unpackes a struct created on a
   Particle Photon with the following:
 
-  struct network_info_t{
-    int counter; // increasing value to verify new packets
-
-    int throttle_pos; // signal from controller
-    int throttle_out; // modified signal to car
-    int steer_pos;  // signal from controller and to car
-
-    unsigned ir_changes;
-
-    int sig_strength;
-    // Data from sensors
-    float ax;
-    float ay;
-    float az;
-    float battery_voltage_in;
-    float battery_current_in;
-    // Wifi parameters
-    byte device_mac[6];
-    char local_ip[16];
-    char gateway_ip[16];
-    char subnet_mask[16];
-    byte access_point_BSSID[6];
-    char ssid[20];
-    char terminator[4];
-};
-
-  See udp-wifi-streamer.ino for the Photon code.
+  Keeps a buffer of cross_time_max_ms length and looks for an increase of cross_min_increase in that 
+  buffer to trigger a crossing.  If a crossing is detected, the buffer is cleared, thus taking time
+  to fill again.
+  Time is given in ms, relative to the car, so no network delay should be present
 '''
 host = "18.217.55.123"  # IP address of Talaga's EC2 repeater
 port = 49154
