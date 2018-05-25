@@ -19,16 +19,21 @@
         Motor - Get the steering and motor control as a pass through
             system.
             
+    particle compile photon
+    particle flash photon-02
 */
 
 #define VCONVERT 488
 #define ACONVERTM 0.0074
 #define ACONVERTB -5.00
 #define SMOOTH_LEN 5
+#define PACKET_PERIOD_MS 100  // 10hz
+#define NETWORK_UPDATE_PERIOD_MS 1000 // 1hz
 // Send UDP packets to this IP & Port
 //IPAddress remoteIP(192, 168, 1, 166);
 //IPAddress remoteIP(34,198,243,87);
-IPAddress remoteIP(18,217,55,123); // Talaga EC2
+//IPAddress remoteIP(18,217,55,123); // Talaga EC2
+IPAddress remoteIP(192,168,79,10); // Talaga EC2
 int port = 49154;
 // Define our Gyro sensors unit
 /*
@@ -62,6 +67,7 @@ MPU9250 myIMU;
 // What we'll send over udp
 struct network_info_t{
   unsigned counter; // increasing value to verify new packets
+  unsigned milli_time;
 
   int throttle_pos; // signal from controller
   int throttle_out; // modified signal to car
@@ -77,6 +83,7 @@ struct network_info_t{
   float battery_voltage_in;
   float battery_current_in;
   float battery_current_sum;
+  unsigned wheel_pos;
   // Wifi parameters
   byte device_mac[6];
   char local_ip[16];
@@ -89,13 +96,16 @@ struct network_info_t{
 
 Servo myservos[2] = {};
 UDP Udp;
-int counter;
+unsigned counter;
+unsigned packet_counter;
+unsigned last_packet_sent_at;
+unsigned last_network_update_at;
 network_info_t network;
 
 unsigned current_smoother[SMOOTH_LEN] = {}; // to smooth the current 
 unsigned voltage_smoother[SMOOTH_LEN] = {}; // to smooth the current
 float amp_sum = 0;
-long last_millis = 0;
+unsigned last_millis = 0;
 
 // IR trigger
 volatile unsigned ir_changes;
@@ -106,6 +116,12 @@ void ir_trigger(){
 
 
 int ch_throttle(String val);
+void updateNetworkStats(); 
+
+
+STARTUP(WiFi.selectAntenna(ANT_AUTO));  // continually switches at high speed between antennas
+//STARTUP(WiFi.selectAntenna(ANT_INTERNAL)); // selects the CHIP antenna
+//STARTUP(WiFi.selectAntenna(ANT_EXTERNAL)); // selects the u.FL 
 
 void setup() {
     WiFi.on();
@@ -118,6 +134,7 @@ void setup() {
     pinMode(throttle_in, INPUT);
 
     counter = 0;
+    packet_counter = 0;
     last_millis = millis();
 
     myservos[0].attach(steer_out);
@@ -130,6 +147,13 @@ void setup() {
     ir_changes = 0;
     pinMode(IR_detect_in, INPUT_PULLUP);
     attachInterrupt(IR_detect_in, ir_trigger, FALLING);
+    
+    // Initialize wheel pos
+    network.wheel_pos = 0;
+    
+    // Timers for periodic net update and packet sending
+    last_packet_sent_at = 0;
+    last_network_update_at = 0;
     
     // set the termination string at the end of the struct
     network.terminator[0] = 0xDE;
@@ -148,15 +172,8 @@ void loop(){
     network.ax = myIMU.ax;
     network.ay = myIMU.ay;
     network.az = myIMU.az;
-    // pull in all network info into struct
-    WiFi.macAddress(network.device_mac);
-    strcpy(network.local_ip, WiFi.localIP().toString() );
-    strcpy(network.gateway_ip, WiFi.gatewayIP().toString() );
-    strcpy(network.subnet_mask, WiFi.subnetMask().toString() );
-    network.sig_strength = WiFi.RSSI();
-    WiFi.BSSID(network.access_point_BSSID);
-    strcpy(network.ssid, WiFi.SSID());
-    network.counter = counter;
+    
+    
 
     // Battery info
     // do voltage smoothing
@@ -201,9 +218,18 @@ void loop(){
                          
     network.ir_changes = ir_changes;
     
+    // Don't update network settings so fast
+    if( millis() > last_network_update_at + NETWORK_UPDATE_PERIOD_MS){
+        updateNetworkStats();
+        last_network_update_at = millis();
+    }
+    
     // TODO Verify car is still drivable when Wifi is lost
-    if(WiFi.ready()){
-      Udp.sendPacket((byte*)&network, sizeof(network), remoteIP, port);
+    if(WiFi.ready() && millis() > last_packet_sent_at + PACKET_PERIOD_MS){
+        network.counter = packet_counter++;
+        network.milli_time = millis();
+        Udp.sendPacket((byte*)&network, sizeof(network), remoteIP, port);
+        last_packet_sent_at = millis();
     }
 
     // Flash the blue led to signify activity
@@ -231,4 +257,15 @@ int ch_throttle(String val){
         // Let the console know it was unsuccessful
         return -1;
     }
+}
+
+void updateNetworkStats(){
+    // pull in all network info into struct
+    WiFi.macAddress(network.device_mac);
+    strcpy(network.local_ip, WiFi.localIP().toString() );
+    strcpy(network.gateway_ip, WiFi.gatewayIP().toString() );
+    strcpy(network.subnet_mask, WiFi.subnetMask().toString() );
+    network.sig_strength = WiFi.RSSI();
+    WiFi.BSSID(network.access_point_BSSID);
+    strcpy(network.ssid, WiFi.SSID());
 }
