@@ -66,7 +66,8 @@ print("Waiting to receive message...")
 while True:
     if mode == 0 or mode == 1: #no recording or recording
       (data, addr) = UDPSock.recvfrom(buf)
-      (counter) = unpack('i', data[0:4]) # pull the first integer off
+      #data = ""
+#      (counter) = unpack('i', data[0:4]) # pull the first integer off
       #    print("Got UDP len: %d id: %d listeners: %d" % ( len(data), counter[0], len(con_list)))
       #print "%d %d" % (counter[0], len(con_list))
       # Loop through all the connections and send to each client
@@ -92,7 +93,7 @@ while True:
     for c in con_list:
       (r,w,e) = select.select((c,), (), (), 0)
       # select r returns an empty list if the socket is ready to send.
-
+      
       # No data coming in on TCP
       if len(r) == 0:
         c.send(data)
@@ -103,6 +104,8 @@ while True:
           con_list.remove(c)
         else:
           c.send(data)
+          # chomp incoming tcp data
+          user_input = ''
           if 'r' in user_input:
             print("Recording")
             packet_capture = []
