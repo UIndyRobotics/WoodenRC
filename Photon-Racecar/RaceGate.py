@@ -10,7 +10,8 @@
   to fill again.
   Time is given in ms, relative to the car, so no network delay should be present
 '''
-host = "18.217.55.123"  # IP address of Talaga's EC2 repeater
+#host = "18.217.55.123"  # IP address of Talaga's EC2 repeater
+host = "192.168.79.10"  # UIndy server
 port = 49154
 addr = (host, port)
 
@@ -22,11 +23,13 @@ from unpackStruct import *
 
 
 
-cross_time_max_ms = 200
-cross_min_increase = 15
-pause_after_cross_ms = 2000  # not implemented
+cross_time_max_ms = 500
+cross_min_increase = 40
+pause_after_cross_ms = 2000  
 
 currentMilliTime = lambda: int(round(time.time() * 1000))
+
+maxIR = []
 
 def ms2Time(ms):
   ms = int(ms)
@@ -61,12 +64,21 @@ def updateTimingData(full_ir, info):
   full_ir = filter( lambda (t,_): t > r['time'] - cross_time_max_ms, full_ir)
   return full_ir
   
-def detectCross(full_ir):
+def detectCross(full_ir, last_cross = 0):
+  global maxIR
   if len(full_ir) <= 1:
     return (full_ir, False, -1)
-  (_, start_ir) = full_ir[0]
+  (start_ms, start_ir) = full_ir[0]
   (end_ms, end_ir) = full_ir[-1]
-  print "Diff %d  ir: %d" % (end_ir - start_ir, end_ir) 
+  # Don't detect until after pause_after_cross_ms
+  if end_ms < last_cross + pause_after_cross_ms:
+    return (full_ir, False, -1)
+  # print the last max value to help with tuning
+  maxIR.append(end_ir - start_ir)
+  while len(maxIR) > 50:
+    maxIR = maxIR[1:]
+  #
+  print "Diff %d  Max %d ir: %d" % (end_ir - start_ir, max(maxIR), end_ir) 
   if end_ir - start_ir > cross_min_increase:
     return ([], True, end_ms)
   else:
@@ -75,7 +87,6 @@ def detectCross(full_ir):
 buf = 1024
 TCPSock = socket(AF_INET, SOCK_STREAM)
 TCPSock.connect(addr)
-print("Waiting to receive message...")
 data = ""
 cars = {}
 
@@ -83,15 +94,14 @@ while True:
     data = data + TCPSock.recv(buf)
     
     (data, r) = unpackStruct(data)
-    if 'counter' in r.keys():  # good data!
+    while r != None:
       car_num = ord(r['device_mac'][-1])
       if car_num not in cars.keys():
         cars[car_num] = {'name': car_num, 'laps':[], 'ir':[], 'lap_ms': 0, 'started': False}
     # append timing data
     
       cars[car_num]['ir'] = updateTimingData(cars[car_num]['ir'], r )
-      (cars[car_num]['ir'], cross, end_ms) = detectCross(cars[car_num]['ir'])
-      print len(cars[car_num]['laps'])
+      (cars[car_num]['ir'], cross, end_ms) = detectCross(cars[car_num]['ir'], cars[car_num]['lap_ms'])
       if cross and len(cars[car_num]['laps']) == 0:
         print "Started"
         cars[car_num]['lap_ms'] = end_ms
@@ -101,6 +111,7 @@ while True:
         print "Lap"
         cars[car_num]['laps'].append(end_ms - cars[car_num]['lap_ms'])
         cars[car_num]['lap_ms'] = end_ms
+      (data, r) = unpackStruct(data)
     
     printStatus(cars)
     

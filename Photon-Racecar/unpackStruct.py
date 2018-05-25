@@ -51,7 +51,7 @@ def unpackStruct(data):
   # Search for DEADBEEF and remove it from data
   beef_location = data.find( '\xDE\xAD\xBE\xEF' )
   if beef_location == -1:
-    return (data, r)
+    return (data, None)
 
   packet = data[(beef_location - calcsize(struct_format) + 4):(beef_location + 4)]
   
