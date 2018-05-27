@@ -20,7 +20,7 @@
             system.
             
     particle compile photon
-    particle flash photon-02
+    particle flash CarXXX
 */
 
 #define VCONVERT 488
