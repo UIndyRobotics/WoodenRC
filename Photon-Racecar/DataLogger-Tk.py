@@ -9,11 +9,9 @@
 '''
 
 host = "18.217.55.123"  # IP address of Talaga's EC2 repeater
+host = "192.168.79.10"  # UIndy server
 port = 49154
 
-
-throttle = -1
-steer = -1
 
 import os
 from Tkinter import *
@@ -155,19 +153,25 @@ net_status = Label(master, text = "")
 net_status.grid(column = 1, row = 0)
 
 output_filename = Entry(master)
-output_filename.grid(column = 0, row = 1)
+output_filename.grid(column = 0, row = 2)
 
 car_filter = Entry(master)
-car_filter.grid(column = 1, row = 1)
+car_filter.grid(column = 1, row = 2)
+
+file_label = Label(master, text = "Filename")
+file_label.grid(column = 0, row = 1)
+
+car_label = Label(master, text = "Car ID")
+car_label.grid(column = 1, row = 1)
 
 filter_status = Label(master, text = "")
-filter_status.grid(column = 3, row = 1)
+filter_status.grid(column = 3, row = 2)
 
 log = Button(master, text = "Log Data", command = logButton)
-log.grid(column = 2, row = 1)
+log.grid(column = 2, row = 2)
 
 car_display = Label(master, text = "Available cars:")
-car_display.grid(column = 1, row = 2)
+car_display.grid(column = 1, row = 3)
 
 mainloop()
 

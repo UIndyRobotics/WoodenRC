@@ -15,7 +15,7 @@ PACKET_LOG_WRITER DEFAULT packet_log_writer.rb nil true nil 2000000000 nil false
 INTERFACE_TARGET INST cmd_tlm_server.txt # Use cmd_tlm_server.txt in targets/INST
 INTERFACE_TARGET INST2 cmd_tlm_server2.txt # Use cmd_tlm_server2.txt in targets/INST
 
-INTERFACE PHOTON_INT tcpip_client_interface.rb 18.217.55.123 49154 49154 15 15 TERMINATED 0xDEADBEEF 0xDEADBEEF
+INTERFACE PHOTON_INT tcpip_client_interface.rb 192.168.79.10 49154 49154 15 15 TERMINATED 0xDEADBEEF 0xDEADBEEF
   TARGET PHOTON
 
 
