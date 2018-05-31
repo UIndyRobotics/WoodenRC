@@ -57,6 +57,18 @@ def printStatus(cars):
     print "%s %d laps:  %s" % (c["name"], len(c['laps']), lap_detail)
   print "\n\n"
 
+def printCurrTime(cars):
+  print "%d Cars" % (len(cars))
+  for cnum in sorted(cars.keys()):
+    c = cars[cnum]
+    #lap_detail = ""
+    #total_time = 0.0
+    # c.laps is an array of float times
+    #for lnum in range(len(c['laps'])):
+    #  total_time += c['laps'][lnum]
+    #  lap_detail += "L%d: %s (%s)   " % (lnum ,ms2Time(c['laps'][lnum]), ms2Time(total_time))
+    print "%s %d " % (c["name"], c['laps_ms'])
+  print "\n\n"
 
 
 def updateTimingData(full_ir, info):
@@ -97,7 +109,7 @@ while True:
     while r != None:
       car_num = ord(r['device_mac'][-1])
       if car_num not in cars.keys():
-        cars[car_num] = {'name': car_num, 'laps':[], 'ir':[], 'lap_ms': 0, 'started': False}
+        cars[car_num] = {'name': car_num, 'laps':[], 'ir':[], 'lap_ms': 0, 'started': False, 'curms': 0}
     # append timing data
     
       cars[car_num]['ir'] = updateTimingData(cars[car_num]['ir'], r )
@@ -113,7 +125,9 @@ while True:
         cars[car_num]['lap_ms'] = end_ms
       (data, r) = unpackStruct(data)
     
-    printStatus(cars)
+    #printStatus(cars)
+    printCurrTime(cars)
+    
     
 
     
