@@ -67,7 +67,10 @@ def printCurrTime(cars):
     #for lnum in range(len(c['laps'])):
     #  total_time += c['laps'][lnum]
     #  lap_detail += "L%d: %s (%s)   " % (lnum ,ms2Time(c['laps'][lnum]), ms2Time(total_time))
-    print "%s %d " % (c["name"], c['lap_ms'])
+    if len(c['laps']) == 0:
+      print "%s (%d Laps) Curr: -- " % (c["name"], len(c['laps']) )
+    else:
+      print "%s (%d Laps) Curr: %s Last %s" % (c["name"], len(c['laps']), ms2Time(c['cur_ms'] - c['lap_ms']), ms2Time(c['laps'][-1]))
   print "\n\n"
 
 
@@ -109,9 +112,9 @@ while True:
     while r != None:
       car_num = ord(r['device_mac'][-1])
       if car_num not in cars.keys():
-        cars[car_num] = {'name': car_num, 'laps':[], 'ir':[], 'lap_ms': 0, 'started': False, 'curms': 0}
+        cars[car_num] = {'name': car_num, 'laps':[], 'ir':[], 'lap_ms': 0, 'started': False, 'cur_ms': 0}
     # append timing data
-    
+      cars[car_num]['cur_ms'] = r['time']
       cars[car_num]['ir'] = updateTimingData(cars[car_num]['ir'], r )
       (cars[car_num]['ir'], cross, end_ms) = detectCross(cars[car_num]['ir'], cars[car_num]['lap_ms'])
       if cross and len(cars[car_num]['laps']) == 0:
