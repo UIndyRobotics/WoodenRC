@@ -69,8 +69,10 @@ def printCurrTime(cars):
     #  lap_detail += "L%d: %s (%s)   " % (lnum ,ms2Time(c['laps'][lnum]), ms2Time(total_time))
     if len(c['laps']) == 0:
       print "%s (%d Laps) Curr: -- " % (c["name"], len(c['laps']) )
+    elif len(c['laps']) == 1:
+      print "%s (%d Laps) Curr: %s Last %s Best: --" % (c["name"], len(c['laps']), ms2Time(c['cur_ms'] - c['lap_ms']), ms2Time(c['laps'][-1]))
     else:
-      print "%s (%d Laps) Curr: %s Last %s" % (c["name"], len(c['laps']), ms2Time(c['cur_ms'] - c['lap_ms']), ms2Time(c['laps'][-1]))
+      print "%s (%d Laps) Curr: %s Last %s Best: %s" % (c["name"], len(c['laps']), ms2Time(c['cur_ms'] - c['lap_ms']), ms2Time(c['laps'][-1]), ms2Time(min(c['laps'][1:])))
   print "\n\n"
 
 
@@ -112,7 +114,7 @@ while True:
     while r != None:
       car_num = ord(r['device_mac'][-1])
       if car_num not in cars.keys():
-        cars[car_num] = {'name': car_num, 'laps':[], 'ir':[], 'lap_ms': 0, 'started': False, 'cur_ms': 0}
+        cars[car_num] = {'name': car_num, 'laps':[], 'ir':[], 'lap_ms': 0, 'started': False, 'cur_ms': 0 }
     # append timing data
       cars[car_num]['cur_ms'] = r['time']
       cars[car_num]['ir'] = updateTimingData(cars[car_num]['ir'], r )
