@@ -23,12 +23,16 @@
     particle flash CarXXX
 */
 
-#define VCONVERT 488
+#define VCONVERT  341 //488
 #define ACONVERTM 0.0074
 #define ACONVERTB -5.00
 #define SMOOTH_LEN 5
 #define PACKET_PERIOD_MS 100  // 10hz
 #define NETWORK_UPDATE_PERIOD_MS 1000 // 1hz
+
+#define YACCEL_GRANNY_MODE 0.3
+#define GRANNY_TIMEOUT 5000
+
 // Send UDP packets to this IP & Port
 //IPAddress remoteIP(192, 168, 1, 166);
 //IPAddress remoteIP(34,198,243,87);
@@ -59,7 +63,12 @@ int IR_detect_in = A2;
 // so setting this to 80 means it will range from 80 to 100 for the full
 // controller movement.
 // TODO Research motor controller modes and apply expo
-int throttle_min = 70;
+int throttle_min = 80;  // normal 83
+int steering_min = 50;
+
+unsigned frames_per_packet = 0;
+unsigned millis_to_reenable = 0;
+float last_ay = 0;
 
 /************************************************/
 MPU9250 myIMU;
@@ -169,10 +178,10 @@ void loop(){
     myIMU.ax = (float)myIMU.accelCount[0] * myIMU.aRes; // - myIMU.accelBias[0];
     myIMU.ay = (float)myIMU.accelCount[1] * myIMU.aRes; // - myIMU.accelBias[1];
     myIMU.az = (float)myIMU.accelCount[2] * myIMU.aRes; // - myIMU.accelBias[2];
-    network.ax = myIMU.ax;
-    network.ay = myIMU.ay;
-    network.az = myIMU.az;
-    
+    network.ax =+ myIMU.ax;
+    network.ay =+ myIMU.ay;
+    network.az =+ myIMU.az;
+    frames_per_packet++;
     
 
     // Battery info
@@ -205,10 +214,14 @@ void loop(){
     // TODO: figure out how not to block when it isn't getting a PWM signal
    network.throttle_pos = map(pulseIn(throttle_in, HIGH), 1105, 1897, 0, 180);
    network.steer_pos = map(pulseIn(steer_in, HIGH), 1105, 1897, 0, 180);
-
+    
+    network.steer_pos = map(network.steer_pos, 0, 180, steering_min, 180-steering_min);
     myservos[0].write(network.steer_pos);
     // Apply a throttle linear shift around middle (90)
     network.throttle_out = map(network.throttle_pos, 0, 180, throttle_min, 180-throttle_min);
+    if(millis_to_reenable > millis()){
+        network.throttle_out = 90;
+    }
     myservos[1].write(network.throttle_out);
     myIMU.updateTime();
     MahonyQuaternionUpdate(myIMU.ax, myIMU.ay, myIMU.az, myIMU.gx * DEG_TO_RAD,
@@ -228,8 +241,20 @@ void loop(){
     if(WiFi.ready() && millis() > last_packet_sent_at + PACKET_PERIOD_MS){
         network.counter = packet_counter++;
         network.milli_time = millis();
+        network.ax = network.ax / frames_per_packet;
+        network.ay = network.ay / frames_per_packet;
+        network.az = network.az / frames_per_packet;
         Udp.sendPacket((byte*)&network, sizeof(network), remoteIP, port);
         last_packet_sent_at = millis();
+        // Check bump
+        if(abs(network.ay - last_ay) > YACCEL_GRANNY_MODE){
+            millis_to_reenable = millis() + GRANNY_TIMEOUT; // disable for GRANNY_TIMEOUT ms
+        }
+        last_ay = network.ay;
+        network.ax = 0;
+        network.ay = 0;
+        network.az = 0;
+        frames_per_packet = 0;
     }
 
     // Flash the blue led to signify activity
