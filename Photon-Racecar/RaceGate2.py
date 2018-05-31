@@ -67,7 +67,7 @@ def printCurrTime(cars):
     #for lnum in range(len(c['laps'])):
     #  total_time += c['laps'][lnum]
     #  lap_detail += "L%d: %s (%s)   " % (lnum ,ms2Time(c['laps'][lnum]), ms2Time(total_time))
-    print "%s %d " % (c["name"], c['laps_ms'])
+    print "%s %d " % (c["name"], c['lap_ms'])
   print "\n\n"
 
 
