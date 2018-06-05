@@ -731,7 +731,7 @@ uint8_t MPU9250::writeByteWire(uint8_t deviceAddress, uint8_t registerAddress,
   Wire.write(data);                 // Put data in Tx buffer
   Wire.endTransmission();           // Send the Tx buffer
   // TODO: Fix this to return something meaningful
-  return NULL;
+  return (uint8_t)NULL; // PGT
 }
 
 // Read a byte from given register on device. Calls necessary SPI or I2C

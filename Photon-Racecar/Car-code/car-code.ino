@@ -30,7 +30,7 @@
 #define PACKET_PERIOD_MS 100  // 10hz
 #define NETWORK_UPDATE_PERIOD_MS 1000 // 1hz
 
-#define YACCEL_GRANNY_MODE 0.3
+#define YACCEL_GRANNY_MODE 0.55
 #define GRANNY_TIMEOUT 5000
 
 // Send UDP packets to this IP & Port
@@ -63,7 +63,7 @@ int IR_detect_in = A2;
 // so setting this to 80 means it will range from 80 to 100 for the full
 // controller movement.
 // TODO Research motor controller modes and apply expo
-int throttle_min = 80;  // normal 83
+int throttle_min = 70;  // normal 83
 int steering_min = 50;
 
 unsigned frames_per_packet = 0;
@@ -81,6 +81,7 @@ struct network_info_t{
   int throttle_pos; // signal from controller
   int throttle_out; // modified signal to car
   int steer_pos;  // signal from controller and to car
+  int steer_out;
   
   unsigned ir_changes;
 
@@ -92,7 +93,7 @@ struct network_info_t{
   float battery_voltage_in;
   float battery_current_in;
   float battery_current_sum;
-  unsigned wheel_pos;
+
   // Wifi parameters
   byte device_mac[6];
   char local_ip[16];
@@ -124,7 +125,7 @@ void ir_trigger(){
 }
 
 
-int ch_throttle(String val);
+//int ch_throttle(String val);
 void updateNetworkStats(); 
 
 
@@ -149,16 +150,13 @@ void setup() {
     myservos[0].attach(steer_out);
     myservos[1].attach(throttle_out);
     
-    Particle.variable("throttle_min", throttle_min);
-    Particle.function("ch_throttle", ch_throttle);
+    //Particle.variable("throttle_min", throttle_min);
+    //Particle.function("ch_throttle", ch_throttle);
     
     // IR pit and ISR setup
     ir_changes = 0;
     pinMode(IR_detect_in, INPUT_PULLUP);
     attachInterrupt(IR_detect_in, ir_trigger, FALLING);
-    
-    // Initialize wheel pos
-    network.wheel_pos = 0;
     
     // Timers for periodic net update and packet sending
     last_packet_sent_at = 0;
@@ -212,17 +210,24 @@ void loop(){
     // TODO Investigate if pulseIn is the best here
     // Maps pwm pulse width to degrees, which the Servo library likes.
     // TODO: figure out how not to block when it isn't getting a PWM signal
-   network.throttle_pos = map(pulseIn(throttle_in, HIGH), 1105, 1897, 0, 180);
-   network.steer_pos = map(pulseIn(steer_in, HIGH), 1105, 1897, 0, 180);
+    network.throttle_pos = map(pulseIn(throttle_in, HIGH), 1105, 1897, 0, 180);
+    network.steer_pos = map(pulseIn(steer_in, HIGH), 1105, 1897, 0, 180);
     
-    network.steer_pos = map(network.steer_pos, 0, 180, steering_min, 180-steering_min);
-    myservos[0].write(network.steer_pos);
+    // Steering map
+    network.steer_out = map(network.steer_pos, 0, 180, steering_min, 180-steering_min);
+    myservos[0].write(network.steer_out);   // Send it to the servo!
+    
     // Apply a throttle linear shift around middle (90)
     network.throttle_out = map(network.throttle_pos, 0, 180, throttle_min, 180-throttle_min);
+    
+    network.throttle_out = network.throttle_out - 10; // Not centered?!?!
+    network.throttle_out = max(network.throttle_out, 68); // Limit reverse speed
+    
     if(millis_to_reenable > millis()){
-        network.throttle_out = 90;
+        network.throttle_out = map(network.throttle_out, 0, 180, 65, 180-65);
     }
-    myservos[1].write(network.throttle_out);
+    myservos[1].write(network.throttle_out);    // Send it to the motor
+    
     myIMU.updateTime();
     MahonyQuaternionUpdate(myIMU.ax, myIMU.ay, myIMU.az, myIMU.gx * DEG_TO_RAD,
                          myIMU.gy * DEG_TO_RAD, myIMU.gz * DEG_TO_RAD, myIMU.my,
@@ -268,6 +273,7 @@ void loop(){
     delay(5);
 }
 
+/*
 int ch_throttle(String val){
     int value = val.toInt();
     if(value <= 90 && value >= 0){
@@ -283,6 +289,8 @@ int ch_throttle(String val){
         return -1;
     }
 }
+*/
+
 
 void updateNetworkStats(){
     // pull in all network info into struct
