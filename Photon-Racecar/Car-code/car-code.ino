@@ -30,7 +30,7 @@
 #define PACKET_PERIOD_MS 100  // 10hz
 #define NETWORK_UPDATE_PERIOD_MS 1000 // 1hz
 
-#define YACCEL_GRANNY_MODE 0.55
+#define YACCEL_GRANNY_MODE 100  // 100 to disable, 0.55 regular
 #define GRANNY_TIMEOUT 5000
 
 // Send UDP packets to this IP & Port
@@ -63,8 +63,8 @@ int IR_detect_in = A2;
 // so setting this to 80 means it will range from 80 to 100 for the full
 // controller movement.
 // TODO Research motor controller modes and apply expo
-int throttle_min = 70;  // normal 83
-int steering_min = 50;
+int throttle_min = 0;//55;  // normal 83
+int steering_min = 40;
 
 unsigned frames_per_packet = 0;
 unsigned millis_to_reenable = 0;
@@ -127,6 +127,8 @@ void ir_trigger(){
 
 //int ch_throttle(String val);
 void updateNetworkStats(); 
+
+int multiMap(int val, int* _in, int* _out, uint8_t size);  // fancy map for expo
 
 
 STARTUP(WiFi.selectAntenna(ANT_AUTO));  // continually switches at high speed between antennas
@@ -214,11 +216,20 @@ void loop(){
     network.steer_pos = map(pulseIn(steer_in, HIGH), 1105, 1897, 0, 180);
     
     // Steering map
-    network.steer_out = map(network.steer_pos, 0, 180, steering_min, 180-steering_min);
+    network.steer_pos = map(network.steer_pos, 0, 180, steering_min, 180-steering_min);
+    int in[]  = {29,39,49,59,69,79,89,99,109,119,129,139,149}					;
+    //int out[]  = {30,48,63,74,83,88,90,91,96,104,115,129,147}					; // expo of 2
+    int out[] = {30,55,72,82,88,90,90,90,92,97,106,121,145}		;  // expo of 3
+    network.steer_out = multiMap(network.steer_pos, in, out, 13);  // <------------------------------------
+    //network.steer_out = network.steer_pos; // linear
     myservos[0].write(network.steer_out);   // Send it to the servo!
     
     // Apply a throttle linear shift around middle (90)
+    // Note ESC zeros when it is turned on, so be sure transmitter is on first!
     network.throttle_out = map(network.throttle_pos, 0, 180, throttle_min, 180-throttle_min);
+    int in_th[]  = {29,39,49,59,69,79,89,99,109,119,129,139,149};
+    int out_th[]  = {30,48,63,74,83,88,90,91,96,104,115,129,147};
+    network.throttle_out = multiMap(network.throttle_out, in_th, out_th, 13); // <------------------------------------
     
     network.throttle_out = network.throttle_out - 10; // Not centered?!?!
     network.throttle_out = max(network.throttle_out, 68); // Limit reverse speed
@@ -301,4 +312,23 @@ void updateNetworkStats(){
     network.sig_strength = WiFi.RSSI();
     WiFi.BSSID(network.access_point_BSSID);
     strcpy(network.ssid, WiFi.SSID());
+}
+
+// note: the _in array should have increasing values
+int multiMap(int val, int* _in, int* _out, uint8_t size)
+{
+  // take care the value is within range
+  // val = constrain(val, _in[0], _in[size-1]);
+  if (val <= _in[0]) return _out[0];
+  if (val >= _in[size-1]) return _out[size-1];
+
+  // search right interval
+  uint8_t pos = 1;  // _in[0] allready tested
+  while(val > _in[pos]) pos++;
+
+  // this will handle all exact "points" in the _in array
+  if (val == _in[pos]) return _out[pos];
+
+  // interpolate in the right segment for the rest
+  return (val - _in[pos-1]) * (_out[pos] - _out[pos-1]) / (_in[pos] - _in[pos-1]) + _out[pos-1];
 }
