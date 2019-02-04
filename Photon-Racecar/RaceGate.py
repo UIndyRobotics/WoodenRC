@@ -24,7 +24,7 @@ from unpackStruct import *
 
 
 cross_time_max_ms = 500
-cross_min_increase = 40
+cross_min_increase = 30
 pause_after_cross_ms = 2000  
 
 currentMilliTime = lambda: int(round(time.time() * 1000))
